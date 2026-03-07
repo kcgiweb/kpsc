@@ -649,8 +649,8 @@ const Home: React.FC = () => {
                       <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-primary shadow-lg border-b-4 border-secondary shrink-0 group-hover:bg-secondary group-hover:text-white transition-all"><MapPin size={18} /></div>
                       <div>
                         <h5 className="font-black text-[9px] uppercase tracking-widest text-primary mb-1">Visit Us</h5>
-                        <p className="text-black font-medium text-[13px]"22/1, Chokkanahalli, Hegde Nagar Main Road, Yelahanka Hobli Bengalur,
-<br/>Bengaluru, Karnataka 560064 </p>
+                        <p className="text-black font-medium text-[13px]">22/1, Chokkanahalli, Hegde Nagar Main Road, Yelahanka Hobli Bengalur,
+<br />Bengaluru, Karnataka 560064</p>
                       </div>
                    </div>
                    <div className="flex items-start space-x-5 group">
