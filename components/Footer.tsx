@@ -23,8 +23,8 @@ const Footer: React.FC = () => {
               <div className="flex items-start space-x-4 group">
                  <MapPin className="text-secondary shrink-0 mt-1" size={20} />
                  <span className="text-black text-sm leading-relaxed group-hover:text-primary transition-colors">
-                   P.O. Box No. 6455, MG Road, <br />
-                   Bangalore, Karnataka - 560001
+                   22/1, Chokkanahalli, Hegde Nagar Main Road, Yelahanka Hobli Bengalur, <br />
+                   Bengaluru, Karnataka 560064
                  </span>
               </div>
               <div className="flex items-start space-x-4 group">
