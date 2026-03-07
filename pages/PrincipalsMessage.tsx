@@ -116,7 +116,6 @@ const PrincipalsMessage: React.FC = () => {
                   </div>
 
                   <div className="mt-20 pt-10 border-t border-gray-100">
-                     <p className="text-black mb-2">Warm Regards,</p>
                      <p className="text-2xl font-poppins font-bold text-primary mb-2">Ms. Sneha Kavatekar</p>
                      <p className="text-secondary font-black uppercase text-[10px] tracking-widest">Principal,</p>
                      <p className="text-secondary font-black uppercase text-[10px] tracking-widest">Karnataka Public School</p>
