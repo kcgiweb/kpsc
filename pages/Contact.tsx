@@ -110,9 +110,9 @@ const Contact: React.FC = () => {
                     <div>
                        <h4 className="text-xl font-bold text-primary mb-2">Campus Address</h4>
                        <p className="text-black leading-relaxed">
-                         P.O. Box No. 6455, MG Road,<br />
-                         Near Hebbal Flyover, Bangalore North,<br />
-                         Karnataka - 560001, India
+                         22/1, Chokkanahalli, Hegde Nagar Main Road,  <br />
+                        Yelahanka Hobli Bengalur,<br />
+                        Bengaluru, Karnataka 560064
                        </p>
                     </div>
                  </div>
