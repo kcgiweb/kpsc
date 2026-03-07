@@ -649,7 +649,8 @@ const Home: React.FC = () => {
                       <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-primary shadow-lg border-b-4 border-secondary shrink-0 group-hover:bg-secondary group-hover:text-white transition-all"><MapPin size={18} /></div>
                       <div>
                         <h5 className="font-black text-[9px] uppercase tracking-widest text-primary mb-1">Visit Us</h5>
-                        <p className="text-black font-medium text-[13px]">KPS Campus, MG Road, Bangalore North, <br />Karnataka - 560001</p>
+                        <p className="text-black font-medium text-[13px]"22/1, Chokkanahalli, Hegde Nagar Main Road, Yelahanka Hobli Bengalur,
+<br/>Bengaluru, Karnataka 560064 </p>
                       </div>
                    </div>
                    <div className="flex items-start space-x-5 group">
@@ -706,7 +707,7 @@ const Home: React.FC = () => {
            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20">
               {/* CBSE */}
               <div className="flex flex-col items-center gap-4 group">
-                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/CBSE_new_logo.svg/150px-CBSE_new_logo.svg.png" alt="CBSE" className="h-20 object-contain" />
+                 <img src="https://akshara.edu.in/wp-content/uploads/2025/02/cbse.png" alt="CBSE" className="h-20 object-contain" />
                  <p className="text-[10px] font-black uppercase tracking-widest text-secondary">CBSE Affiliated</p>
               </div>
 
