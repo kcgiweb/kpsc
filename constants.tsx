@@ -61,8 +61,7 @@ export const NAVIGATION: NavItem[] = [
     children: [
       { label: 'Gallery', path: '/media/gallery' },
       { label: 'News & Events', path: '/media/news' },
-      { label: 'Blogs', path: '/media/blogs' },
-      { label: 'Walkathon', path: '/media/walkathon' },
+    
     ]
   },
   {
