@@ -38,7 +38,7 @@ const DirectorsSpeak: React.FC = () => {
         </div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h4 className="text-secondary font-black uppercase tracking-[0.5em] text-[10px] mb-6 reveal">Our Stewardship</h4>
-          <h1 className="text-white text-5xl md:text-7xl font-serif font-black mb-4 reveal delay-100">Director's <span className="text-secondary italic">Speak.</span></h1>
+          <h1 className="text-white text-5xl md:text-7xl font-serif font-black mb-4 reveal delay-100">Message from<span className="text-secondary italic"> Chairman</span></h1>
           <div className="w-24 h-1 bg-secondary mx-auto rounded-full reveal delay-200"></div>
         </div>
       </section>
