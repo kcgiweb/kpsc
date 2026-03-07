@@ -656,7 +656,7 @@ const Home: React.FC = () => {
                       <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-primary shadow-lg border-b-4 border-secondary shrink-0 group-hover:bg-secondary group-hover:text-white transition-all"><Phone size={18} /></div>
                       <div>
                         <h5 className="font-black text-[9px] uppercase tracking-widest text-primary mb-1">Admissions Hotline</h5>
-                        <p className="text-black font-medium text-[13px]">+91 87929 53189 <br />+91 98765 43210</p>
+                        <p className="text-black font-medium text-[13px]">+91 9071887788 <br />+91 8310663628</p>
                       </div>
                    </div>
                 </div>
