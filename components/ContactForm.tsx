@@ -11,7 +11,7 @@ const ContactForm: React.FC<{ title?: string }> = ({ title = "Request Prospectus
     setStatus('sending');
     
     try {
-      const response = await fetch("https://formspree.io/f/xojngnzq", {
+      const response = await fetch("https://formspree.io/f/mbdzljek", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
