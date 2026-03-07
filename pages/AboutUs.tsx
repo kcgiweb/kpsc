@@ -99,7 +99,7 @@ const AboutUs: React.FC = () => {
               <div className="relative p-8">
                  <div className="absolute inset-0 bg-primary/5 rounded-[4rem] rotate-3 border border-primary/10"></div>
                  <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-b-[12px] border-secondary">
-                    <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Main Building Legacy" />
+                    <img src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9552_pjx5ir.jpg" className="w-full h-full object-cover" alt="Main Building Legacy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                     <div className="absolute bottom-10 left-10 text-white">
                        <Quote className="text-secondary mb-4" size={40} fill="currentColor" />
@@ -158,42 +158,6 @@ const AboutUs: React.FC = () => {
         </div>
       </section>
 
-      {/* Leadership Preview */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-           <div className="bg-primary rounded-[4rem] p-12 lg:p-24 shadow-2xl relative overflow-hidden text-white flex flex-col lg:flex-row items-center gap-20">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-              
-              <div className="lg:w-1/2 reveal">
-                 <h4 className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] mb-4">Leadership Spotlight</h4>
-                 <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 italic">Visionary <br /><span className="text-secondary not-italic">Guardians.</span></h2>
-                 <p className="text-white/60 text-lg mb-10 leading-relaxed font-medium">
-                   Our management council is composed of decorated educators, industry titans, and social pioneers who believe in the transformative power of education.
-                 </p>
-                 <div className="space-y-6">
-                    <Link to="/about/management" className="flex items-center justify-between p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white hover:text-primary transition-all group/link">
-                       <span className="font-bold">Chairman's Perspective</span>
-                       <ChevronRight className="text-secondary group-hover/link:translate-x-1 transition-transform" />
-                    </Link>
-                    <Link to="/about/directors-message" className="flex items-center justify-between p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white hover:text-primary transition-all group/link">
-                       <span className="font-bold">Director's Message</span>
-                       <ChevronRight className="text-secondary group-hover/link:translate-x-1 transition-transform" />
-                    </Link>
-                 </div>
-              </div>
-
-              <div className="lg:w-1/2 reveal delay-400 grid grid-cols-2 gap-6">
-                 <div className="rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[3/4]">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Chairman" />
-                 </div>
-                 <div className="rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[3/4] translate-y-12">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Director" />
-                 </div>
-              </div>
-           </div>
-        </div>
-      </section>
-
       {/* Core Values Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
@@ -225,7 +189,7 @@ const AboutUs: React.FC = () => {
            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-8 italic leading-tight">Be part of our <span className="text-secondary not-italic underline decoration-2 underline-offset-8">continuing legacy.</span></h2>
            <div className="flex flex-wrap justify-center gap-6">
               <Link to="/admissions/process" className="bg-primary text-white px-12 py-5 rounded-full font-black text-[10px] uppercase tracking-widest hover:bg-secondary transition-all shadow-xl">
-                 Admissions 2024-25
+                 Admissions 2026-27
               </Link>
               <Link to="/about/why-kps" className="bg-white border-2 border-primary text-primary px-12 py-5 rounded-full font-black text-[10px] uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
                  Why KPS?
