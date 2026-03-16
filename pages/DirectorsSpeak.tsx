@@ -111,7 +111,7 @@ const DirectorsSpeak: React.FC = () => {
                     alt="Chairperson" 
                   />
                   <div className="absolute -bottom-10 -left-10 bg-white p-10 rounded-[2.5rem] shadow-2xl z-20 border border-gray-100">
-                     <h3 className="text-2xl font-serif font-bold text-primary">Smt. Suvarna Basavaraj Ramnal</h3>
+                     <h3 className="text-2xl font-serif font-bold text-primary">Smt. Suvarna Basavaraj Ramanal</h3>
                      <p className="text-secondary font-black uppercase text-[10px] tracking-widest mt-1">Chairperson</p>
                   </div>
                </div>
