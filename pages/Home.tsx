@@ -235,7 +235,7 @@ const Home: React.FC = () => {
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden z-10">
         <div className="absolute inset-0">
           <video 
-            src="https://res.cloudinary.com/dbkmzja6c/video/upload/v1772617882/IMG_2441_f6kvve.mov" 
+            src="https://res.cloudinary.com/dbkmzja6c/video/upload/v1774924763/IMG_3727_h3rux5.mov" 
             className="w-full h-full object-cover" 
             autoPlay 
             loop 
