@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karnataka Public School | Excellence in Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GERVJDYTT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2GERVJDYTT');
+</script>
+    <meta name="google-site-verification" content="4fxixGQ_2UbjMCKHs7LPgdWaJlcltWgqTavR_141YeY" />
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#6A0030',
+              secondary: '#F7961E',
+              accent1: '#8A1A72',
+              accent2: '#C63A87',
+              background: '#FFFFFF',
+              text: '#000000',
+            },
+            fontFamily: {
+              sans: ['Open Sans', 'sans-serif'],
+              serif: ['Montserrat', 'sans-serif'],
+              signature: ['Great Vibes', 'cursive'],
+              poppins: ['Poppins', 'sans-serif'],
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translate3d(0, 0, 0)' },
+                '100%': { transform: 'translate3d(-100%, 0, 0)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translate3d(0, 40px, 0)' },
+                '100%': { opacity: '1', transform: 'translate3d(0, 0, 0)' },
+              },
+              zoom: {
+                '0%': { transform: 'scale(1) translate3d(0,0,0)' },
+                '100%': { transform: 'scale(1.05) translate3d(0,0,0)' }
+              },
+              zoomIn: {
+                '0%': { opacity: '0', transform: 'scale(0.95) translate3d(0,0,0)' },
+                '100%': { opacity: '1', transform: 'scale(1) translate3d(0,0,0)' }
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' }
+              }
+            },
+            animation: {
+              marquee: 'marquee 40s linear infinite',
+              'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'zoom': 'zoom 15s ease-in-out infinite alternate',
+              'zoom-in': 'zoomIn 0.3s ease-out forwards',
+              'fade-in': 'fadeIn 0.4s ease-out forwards',
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      body { 
+        scroll-behavior: smooth; 
+        overflow-x: hidden; 
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #f1f1f1; }
+      ::-webkit-scrollbar-thumb { background: #6A0030; border-radius: 10px; }
+      
+      /* GPU Acceleration & Performance */
+      .card-3d-hover, .hero-zoom-img, .fixed-bg-pattern, .animate-marquee, .reveal {
+        will-change: transform, opacity;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+      }
+
+      /* Scroll Reveal Classes */
+      .reveal {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+
+      .glass-header {
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .orange-ticker {
+        background: #F7961E;
+        color: white;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .nav-item-border { position: relative; }
+      .nav-item-border::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #F7961E;
+        transition: width 0.3s ease;
+      }
+      .nav-item-border:hover::after { width: 100%; }
+      .premium-shadow { box-shadow: 0 20px 50px -15px rgba(106, 0, 48, 0.12); }
+      .hero-gradient { background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      .card-container {
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+    </style>
+
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "vite": "https://esm.sh/vite@^7.3.1"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DlD64Hlg.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
