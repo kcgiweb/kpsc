@@ -41,7 +41,6 @@ const Home: React.FC = () => {
       const { scrollLeft, clientWidth, scrollWidth } = ref.current;
       const scrollAmount = clientWidth / 2;
       let scrollTo = direction === 'left' ? scrollLeft - scrollAmount : scrollLeft + scrollAmount;
-
       if (scrollTo < 0) scrollTo = scrollWidth;
       if (scrollTo > scrollWidth - clientWidth) scrollTo = 0;
 

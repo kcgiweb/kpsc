@@ -21,6 +21,7 @@ const AdmissionsPopup: React.FC = () => {
     }, 10000);
     
     return () => clearTimeout(timer);
+
   }, [openPopup]);
 
   const handleSubmit = async (e: React.FormEvent) => {
