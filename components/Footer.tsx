@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
           {/* Brand Info */}
           <div className="space-y-8">
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="w-48 h-16 flex items-center justify-start transition-transform group-hover:scale-105">
-                 <img src="https://res.cloudinary.com/dbkmzja6c/image/upload/v1772604287/cropped-cropped-ksp_tx3va5.webp" alt="KPS Logo" className="w-full h-full object-contain object-left" />
+              <div className="w-64 h-20 flex items-center justify-start transition-transform group-hover:scale-105">
+                 <img src="/images/Kps Logo.png" alt="KPS Logo" className="w-full h-full object-contain object-left" />
               </div>
             </Link>
             <p className="text-black text-sm leading-loose">
