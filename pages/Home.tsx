@@ -21,7 +21,7 @@ const Home: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const bgPatternUrl = "https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png";
+  const bgPatternUrl = "/images/bgPatternUrl.png";
 
   const galleryItems = [
     { id: 1, category: 'Sports', title: 'Sports Day', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789518/SLA_9174_a4ekno.jpg' },
@@ -103,12 +103,12 @@ const Home: React.FC = () => {
   ];
 
   const feedbackData = [
-    { name: "Zaara Rumana", grade: "Class 10", image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772609370/Zara_Rumana_acryyr.jpg", text: "My school takes great pride in its vibrant sports culture, giving every student a chance to shine. Through regular competitions and excellent training, our sports program builds discipline, teamwork, and true sportsmanship.", topic: "Sports Culture" },
-    { name: "Tejaswi Sagar", grade: "Class 9", image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772609369/Tejaswi_Sagar_xhej2f.jpg", text: "I love my school, Karnataka Public School, because it teaches me many new things every day. The teachers are kind and always help us. Our school has a good environment and fun activities. I feel happy and proud to study here because it is like my second home.", topic: "School Environment" },
-    { name: "Sannidhi P", grade: "Grade 9", image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772609369/Sannidhi_aclukf.jpg", text: "My school is a supportive and inspiring place where I discovered my interests and strengths. The teachers and community help me grow both academically and personally.", topic: "Personal Growth" },
-    { name: "Suraj", grade: "Grade IX", image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772609369/Suraj_ahfa2e.jpg", text: "My school is an auspicious place where we learn values, life lessons, experiences and many more. The school also provides holistic education and sporting facilities.", topic: "Holistic Education" },
-    { name: "Vishishta", grade: "Class 10", image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772609369/Vishishta_nug14s.jpg", text: "The teachers are friendly to approach freely and lively classes are conducted", topic: "Friendly Faculty" },
-    { name: "Bindu Shree", grade: "Grade X", image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772609368/Bindushree_vzu4tl.jpg", text: "My journey at this school has been truly transformative, shaping me into a confident and motivated individual. I am constantly inspired by our dedicated teachers who go the extra mile to make every lesson engaging and meaningful. The school provides a nurturing and inclusive environment where every student feels a genuine sense of belonging.", topic: "Student Transformation" }
+    { name: "Zaara Rumana", grade: "Class 10", image: "/images/Zara Rumana.JPG", text: "My school takes great pride in its vibrant sports culture, giving every student a chance to shine. Through regular competitions and excellent training, our sports program builds discipline, teamwork, and true sportsmanship.", topic: "Sports Culture" },
+    { name: "Tejaswi Sagar", grade: "Class 9", image: "/images/Tejaswi Sagar.JPG", text: "I love my school, Karnataka Public School, because it teaches me many new things every day. The teachers are kind and always help us. Our school has a good environment and fun activities. I feel happy and proud to study here because it is like my second home.", topic: "School Environment" },
+    { name: "Sannidhi P", grade: "Grade 9", image: "/images/Sannidhi.JPG", text: "My school is a supportive and inspiring place where I discovered my interests and strengths. The teachers and community help me grow both academically and personally.", topic: "Personal Growth" },
+    { name: "Suraj", grade: "Grade IX", image: "/images/Suraj.JPG", text: "My school is an auspicious place where we learn values, life lessons, experiences and many more. The school also provides holistic education and sporting facilities.", topic: "Holistic Education" },
+    { name: "Vishishta", grade: "Class 10", image: "/images/Vishishta.JPG", text: "The teachers are friendly to approach freely and lively classes are conducted", topic: "Friendly Faculty" },
+    { name: "Bindu Shree", grade: "Grade X", image: "/images/Bindushree.JPG", text: "My journey at this school has been truly transformative, shaping me into a confident and motivated individual. I am constantly inspired by our dedicated teachers who go the extra mile to make every lesson engaging and meaningful. The school provides a nurturing and inclusive environment where every student feels a genuine sense of belonging.", topic: "Student Transformation" }
   ];
 
   const awards = [
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
       org: "Education Today",
       year: "2023",
       desc: "Ranked No.1 in Co-Curricular Education among India’s Top CBSE Schools. This recognition highlights Karnataka Public School’s strong focus on holistic development through sports, arts, and extracurricular programs.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616851/IMG_9744_ivqkmh.jpg",
+      image: "/images/India School Merit Award2023.JPG",
       bg: "bg-orange-50"
     },
     {
@@ -125,7 +125,7 @@ const Home: React.FC = () => {
       org: "Holistic Education",
       year: "2023",
       desc: "Recognized among India’s Top CBSE Schools for excellence in holistic education, emphasizing balanced growth through academics, creativity, and life-skills development.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616851/IMG_9746_xpniah.jpg",
+      image: "/images/India School Merit Award2.JPG",
       bg: "bg-blue-50"
     },
     {
@@ -133,7 +133,7 @@ const Home: React.FC = () => {
       org: "MEGA",
       year: "2022",
       desc: "Awarded by Manipal Educational Global Alliance (MEGA) for implementing innovative teaching methods and modern curriculum strategies that enhance student engagement and practical learning.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616852/IMG_9749_zxmjth.jpg",
+      image: "/images/Best Innovative Curriculum Practices.JPG",
       bg: "bg-green-50"
     },
     {
@@ -141,7 +141,7 @@ const Home: React.FC = () => {
       org: "ITC",
       year: "2025",
       desc: "Received the Appreciation Award for outstanding commitment to sustainability, promoting eco-friendly initiatives, recycling programs, and environmental awareness within the school community.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616852/IMG_9750_orgg6p.jpg",
+      image: "/images/ITC WOW Green Award.JPG",
       bg: "bg-yellow-50"
     },
     {
@@ -149,7 +149,7 @@ const Home: React.FC = () => {
       org: "Throwball (Girls)",
       year: "2025",
       desc: "The girls’ throwball team secured Runner-Up position, demonstrating strong teamwork, dedication, and sporting excellence.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616853/IMG_9751_ds06j9.jpg",
+      image: "/images/Inter-School Sports Competition.JPG",
       bg: "bg-red-50"
     },
     {
@@ -157,7 +157,7 @@ const Home: React.FC = () => {
       org: "Winners",
       year: "2025",
       desc: "Karnataka Public School achieved First Place in the Smash League Championship, reflecting the school’s active participation and success in competitive sports.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616851/IMG_9753_npkxir.jpg",
+      image: "/images/Smash League Championship.JPG",
       bg: "bg-purple-50"
     },
     {
@@ -165,7 +165,7 @@ const Home: React.FC = () => {
       org: "MEGA",
       year: "2022",
       desc: "Recognized by Manipal Educational Global Alliance for excellence in curriculum innovation and leadership in modern K-12 education practices.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616852/IMG_9755_tyfjqs.jpg",
+      image: "/images/Certificate of Achievement.JPG",
       bg: "bg-indigo-50"
     },
     {
@@ -173,7 +173,7 @@ const Home: React.FC = () => {
       org: "Merit Awards & Market Research",
       year: "2017",
       desc: "Awarded as the Best CBSE School in Bangalore by Merit Awards & Market Research, acknowledging the institution’s outstanding academic performance and quality education.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616855/IMG_9756_e5vbyi.jpg",
+      image: "/images/India’s Most Prominent Education Award.JPG",
       bg: "bg-pink-50"
     },
     {
@@ -181,7 +181,7 @@ const Home: React.FC = () => {
       org: "Oxford University Press",
       year: "2024",
       desc: "Karnataka Public School partnered with Oxford University Press to adopt the Oxford Advantage Programme, enhancing teaching quality with global educational resources.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616854/IMG_9758_wajy0u.jpg",
+      image: "/images/Oxford Advantage Programme.JPG",
       bg: "bg-teal-50"
     },
     {
@@ -189,7 +189,7 @@ const Home: React.FC = () => {
       org: "Education Today",
       year: "2025",
       desc: "Honored for excellence in extracurricular programs that support creativity, leadership, cultural activities, and student talent development.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616856/IMG_9760_dzx3c9.jpg",
+      image: "/images/India’s Activities Excellence Award2.JPG",
       bg: "bg-cyan-50"
     },
     {
@@ -197,7 +197,7 @@ const Home: React.FC = () => {
       org: "Bengaluru",
       year: "2025",
       desc: "Recognized for Excellence in Sustainable and Holistic Growth Programs, highlighting the school’s balanced approach to academics, innovation, and student well-being.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616856/IMG_9761_kkvbwn.jpg",
+      image: "/images/India K-12 Awards.JPG",
       bg: "bg-emerald-50"
     },
     {
@@ -205,7 +205,7 @@ const Home: React.FC = () => {
       org: "Education Today",
       year: "2023",
       desc: "Ranked among India’s Top CBSE Schools – Parameter Wise, achieving No.1 position in Co-Curricular Education.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616889/IMG_9763_lafit2.jpg",
+      image: "/images/Certificate of Achievement2.JPG",
       bg: "bg-rose-50"
     },
     {
@@ -213,7 +213,7 @@ const Home: React.FC = () => {
       org: "Winners",
       year: "2025",
       desc: "The girls’ throwball team secured First Place, showcasing the school’s commitment to sports excellence and student achievement.",
-      image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772617100/IMG_9764_k1la2t.jpg",
+      image: "/images/Inter-School Throwball Championship.JPG",
       bg: "bg-amber-50"
     }
   ];
@@ -269,9 +269,9 @@ const Home: React.FC = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-stretch">
             <div className="lg:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-8 perspective-3000">
               {[
-                { title: 'Admission Process', desc: 'Take the first step to prepare your child for life. Click here to view the application procedure.', link: '/admissions/process', img: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772788505/download_dtakho.png', bg: 'bg-[#e3f2fd]', border: 'border-[#0d47a1]', text: 'text-[#1a237e]', accent: 'text-[#0d47a1]' },
-                { title: 'The Curriculum', desc: 'Thematic or Integrated approach to studying. Introduced in 1995-96, the study is based on themes.', link: '/academics/curriculum', img: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772788666/download_2_ofwqnv.png', bg: 'bg-[#fbe9e7]', border: 'border-[#d84315]', text: 'text-[#bf360c]', accent: 'text-[#d84315]' },
-                { title: 'Gallery', desc: 'Read and see articles and video clips on Karnataka Public School in the media & publications.', link: '/media/gallery', img: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789079/SLA_8805_mg8tx0.jpg', bg: 'bg-[#f1f8e9]', border: 'border-[#558b2f]', text: 'text-[#33691e]', accent: 'text-[#558b2f]' },
+                { title: 'Admission Process', desc: 'Take the first step to prepare your child for life. Click here to view the application procedure.', link: '/admissions/process', img: '/images/homeAdmission Process.png', bg: 'bg-[#e3f2fd]', border: 'border-[#0d47a1]', text: 'text-[#1a237e]', accent: 'text-[#0d47a1]' },
+                { title: 'The Curriculum', desc: 'Thematic or Integrated approach to studying. Introduced in 1995-96, the study is based on themes.', link: '/academics/curriculum', img: '/images/homeCurriculum.png', bg: 'bg-[#fbe9e7]', border: 'border-[#d84315]', text: 'text-[#bf360c]', accent: 'text-[#d84315]' },
+                { title: 'Gallery', desc: 'Read and see articles and video clips on Karnataka Public School in the media & publications.', link: '/media/gallery', img: '/images/homeGallery1.jpg', bg: 'bg-[#f1f8e9]', border: 'border-[#558b2f]', text: 'text-[#33691e]', accent: 'text-[#558b2f]' },
               ].map((card, i) => (
                 <div key={i} className="reveal card-container flex flex-col h-full preserve-3d" style={{ transitionDelay: `${i * 150}ms` }}>
                   <div className={`${card.bg} rounded-[2.5rem] p-3 pb-0 border-b-[10px] ${card.border} card-3d-hover preserve-3d h-full shadow-2xl flex flex-col group transition-all duration-500`}>
@@ -323,7 +323,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2 relative">
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-secondary/20 rounded-full blur-2xl"></div>
-              <img src="https://res.cloudinary.com/dbkmzja6c/image/upload/v1772610801/IMG_9491_qmlbj5.jpg" className="rounded-[2rem] shadow-2xl relative z-10 w-full" alt="Director" />
+              <img src="/images/home-about-pic.JPG" className="rounded-[2rem] shadow-2xl relative z-10 w-full" alt="Director" />
               <div className="absolute -bottom-8 -right-8 bg-white p-8 rounded-2xl shadow-2xl z-20 hidden md:block max-w-sm">
                 <Quote className="text-secondary mb-3" size={24} />
                 <p className="text-black italic text-md leading-relaxed mb-3">"At KPS, we empower future thinkers, innovators, and leaders who will shape the global narrative."</p>
@@ -519,9 +519,9 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6 pt-12 lg:pt-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 perspective-3000">
             {[
-              { title: 'Academics', desc: 'Every student, a unique story. Explore our diverse academics capturing personalized learning.', img: 'https://res.cloudinary.com/dbkmzja6c/image/upload/v1772610945/IMG_9673_dgy2vl.jpg', color: '#1a237e', accent: '#0d47a1', bg: '#e3f2fd', link: '/academics/overview' },
-              { title: 'Facilities', desc: 'Imagine sparking your child\'s imagination in our bright and airy classrooms with interactive learning tools.', img: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772788624/download_1_choh38.png', color: '#bf360c', accent: '#d84315', bg: '#fbe9e7', link: '/infrastructure/overview' },
-              { title: 'Picture Gallery', desc: 'Step into our world! Our picture gallery captures the spirit of learning and fun at KPS.', img: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789079/SLA_8937_kxomhs.jpg', color: '#33691e', accent: '#558b2f', bg: '#f1f8e9', link: '/media/gallery' }
+              { title: 'Academics', desc: 'Every student, a unique story. Explore our diverse academics capturing personalized learning.', img: '/images/homeAcademics.JPG', color: '#1a237e', accent: '#0d47a1', bg: '#e3f2fd', link: '/academics/overview' },
+              { title: 'Facilities', desc: 'Imagine sparking your child\'s imagination in our bright and airy classrooms with interactive learning tools.', img: '/images/homeFacilities.png', color: '#bf360c', accent: '#d84315', bg: '#fbe9e7', link: '/infrastructure/overview' },
+              { title: 'Picture Gallery', desc: 'Step into our world! Our picture gallery captures the spirit of learning and fun at KPS.', img: '/images/homeGallery.jpg', color: '#33691e', accent: '#558b2f', bg: '#f1f8e9', link: '/media/gallery' }
             ].map((pillar, i) => (
               <div key={i} className="reveal card-container preserve-3d" style={{ transitionDelay: `${i * 200}ms` }}>
                 <div className="rounded-[2.5rem] p-3 pb-0 border-b-[10px] card-3d-hover preserve-3d h-full shadow-2xl flex flex-col" style={{ backgroundColor: pillar.bg, borderColor: pillar.accent }}>

@@ -44,8 +44,8 @@ const Header: React.FC = () => {
       }`}>
         <div className="container mx-auto px-4 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-64 h-20 flex items-center justify-start transition-transform group-hover:scale-105">
-               <img src="/images/Kps Logo.png" alt="KPS Logo" className="w-full h-full object-contain object-left" />
+            <div className="w-64 h-20 flex items-center justify-start transition-transform group-hover:scale-105 mr-8">
+               <img src="/images/kps-logo.png" alt="KPS Logo" className="w-full h-full object-contain object-left" />
             </div>
           </Link>
 
@@ -54,14 +54,14 @@ const Header: React.FC = () => {
             {NAVIGATION.map((item) => (
               <div 
                 key={item.path} 
-                className="relative group px-4"
+                className="relative group px-2"
                 onMouseEnter={() => setActiveDropdown(item.label)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <div className="flex items-center space-x-1">
                   <Link 
                     to={item.path}
-                    className={`py-2 text-[13px] font-bold uppercase tracking-widest transition-colors nav-item-border ${
+                    className={`py-2 text-[12px] font-bold uppercase tracking-widest transition-colors nav-item-border ${
                       scrolled ? 'text-black hover:text-primary' : 'text-white hover:text-secondary'
                     }`}
                   >
