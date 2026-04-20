@@ -145,7 +145,7 @@ const Header: React.FC = () => {
             }}
             className="mt-6 w-full bg-secondary text-white text-center py-4 rounded-xl font-black text-sm uppercase tracking-[0.2em] shadow-xl hover:bg-primary transition-colors"
           >
-            Admissions Open 24-25
+            Admissions Open 26-27
           </button>
         </div>
       </div>

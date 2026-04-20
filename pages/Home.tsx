@@ -257,7 +257,7 @@ const Home: React.FC = () => {
         <div className="animate-marquee flex items-center space-x-20 w-max px-10" style={{ animationDuration: '35s' }}>
           {[1, 2, 3, 4].map(i => (
             <span key={i} className="text-xs font-black uppercase tracking-[0.3em] whitespace-nowrap">
-              Admissions open for Academic Year 2024-25. Visit campus for details. • Awarded "Best Infrastructure" by Education World 2023. • Integrated Coaching for Grade 11-12 now available.
+              Admissions open for Academic Year 2026-27. Visit campus for details. • Awarded "Best Infrastructure" by Education World 2023. • Integrated Coaching for Grade 11-12 now available.
             </span>
           ))}
         </div>
