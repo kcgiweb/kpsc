@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   Music, Palette, Mic2, Cpu, Theater, 
   Sparkles, Award, Star, Globe, 
@@ -69,11 +70,12 @@ const CoCurricular: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Co Curricular" />
       {/* Editorial Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1514525253361-bee1455d082c?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover scale-100 animate-[zoom_20s_infinite_alternate]" 
             alt="School Cultural Performance" 
           />
@@ -121,7 +123,7 @@ const CoCurricular: React.FC = () => {
                <div className="relative p-8">
                   <div className="absolute inset-0 bg-primary/5 rounded-[4rem] rotate-3 border border-primary/10"></div>
                   <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-b-[12px] border-secondary">
-                     <img src="https://images.unsplash.com/photo-1460518451285-cd7ba71123b2?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Student Painting" />
+                     <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Student Painting" />
                      <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                      <div className="absolute bottom-10 left-10 text-white">
                         <Palette className="text-secondary mb-4" size={40} />
@@ -166,7 +168,7 @@ const CoCurricular: React.FC = () => {
 
       {/* Clubs & Societies Grid */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
            <div className="flex flex-col lg:flex-row items-center gap-20">
               <div className="lg:w-1/2 reveal">
@@ -233,7 +235,7 @@ const CoCurricular: React.FC = () => {
               </div>
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="relative rounded-[4rem] overflow-hidden shadow-2xl border-b-[10px] border-secondary aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Student Theater" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Student Theater" />
                  </div>
               </div>
            </div>

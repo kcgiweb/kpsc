@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   BookOpen, Target, Sparkles, Brain, 
   Microscope, Globe, GraduationCap, ArrowRight, 
@@ -67,11 +68,12 @@ const Academics: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Academics" />
       {/* Editorial Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789517/SLA_9092_dnumlx.jpg" 
+            src="/images/homeGallery1.jpg" 
             className="w-full h-full object-cover scale-100 animate-[zoom_20s_infinite_alternate]" 
             alt="Students Studying" 
           />
@@ -114,7 +116,7 @@ const Academics: React.FC = () => {
                <div className="relative p-8">
                   <div className="absolute inset-0 bg-primary/5 rounded-[4rem] rotate-3 border border-primary/10"></div>
                   <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-b-[12px] border-secondary">
-                     <img src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789514/SLA_9084_ysrthb.jpg" className="w-full h-full object-cover" alt="Student in Tech Lab" />
+                     <img src="/images/homeGallery1.jpg" className="w-full h-full object-cover" alt="Student in Tech Lab" />
                      <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                      <div className="absolute bottom-10 left-10 text-white">
                         <Beaker className="text-secondary mb-4" size={40} />
@@ -157,7 +159,7 @@ const Academics: React.FC = () => {
 
       {/* Statistics Banner */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
             {statistics.map((stat, i) => (
@@ -192,8 +194,8 @@ const Academics: React.FC = () => {
 
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="grid grid-cols-2 gap-4">
-                    <img src="https://images.unsplash.com/photo-1544717297-fa95b33979d7?auto=format&fit=crop&q=80" className="rounded-[2.5rem] shadow-2xl aspect-square object-cover" alt="Faculty 1" />
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" className="rounded-[2.5rem] shadow-2xl aspect-square object-cover mt-8" alt="Faculty 2" />
+                    <img src="/images/homeAcademics.JPG" className="rounded-[2.5rem] shadow-2xl aspect-square object-cover" alt="Faculty 1" />
+                    <img src="/images/homeAcademics.JPG" className="rounded-[2.5rem] shadow-2xl aspect-square object-cover mt-8" alt="Faculty 2" />
                  </div>
               </div>
            </div>

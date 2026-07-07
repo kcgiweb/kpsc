@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Quote, Sparkles, GraduationCap, Globe, Heart, ShieldCheck, ChevronRight, Mail, Phone, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -27,11 +28,12 @@ const PrincipalsMessage: React.FC = () => {
 
    return (
       <main className="bg-white">
+      <SEO title="Principals Message" />
          {/* Editorial Hero */}
          <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
                <img
-                  src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80"
+                  src="/images/homeAcademics.JPG"
                   className="w-full h-full object-cover"
                   alt="Director's Message Background"
                />

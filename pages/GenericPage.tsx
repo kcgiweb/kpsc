@@ -1,5 +1,6 @@
 
 import React from 'react';
+import SEO from '../components/SEO';
 import { useLocation } from 'react-router-dom';
 import { CheckCircle2, ChevronRight } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
@@ -18,7 +19,7 @@ const GenericPage: React.FC = () => {
     return {
       category: category.toUpperCase(),
       title: formattedTitle,
-      heroImage: "https://images.unsplash.com/photo-1510531704581-5b2870972060?auto=format&fit=crop&q=80",
+      heroImage: "/images/homeAcademics.JPG",
     };
   };
 
@@ -26,6 +27,7 @@ const GenericPage: React.FC = () => {
 
   return (
     <main>
+      <SEO title="Generic Page" />
       {/* Hero */}
       <section className="relative h-[400px] flex items-center justify-center text-white">
         <div className="absolute inset-0">

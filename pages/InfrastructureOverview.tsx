@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   Building, Wifi, Shield, Zap, Wind, Coffee, Dumbbell, 
   Microscope, Laptop, Monitor, Bus, Camera, HeartPulse, 
@@ -55,11 +56,12 @@ const InfrastructureOverview: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Infrastructure Overview" />
       {/* Editorial Hero */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789518/SLA_9136_xpa05s.jpg" 
+            src="/images/homeGallery1.jpg" 
             className="w-full h-full object-cover animate-[zoom_20s_infinite_alternate]" 
             alt="Modern Office Building" 
           />
@@ -120,7 +122,7 @@ const InfrastructureOverview: React.FC = () => {
 
       {/* Feature Spotlight: The Digital Spine */}
       <section className="py-24 bg-primary relative overflow-hidden text-white">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
            <div className="flex flex-col lg:flex-row-reverse gap-20 items-center">
               <div className="lg:w-1/2 reveal">
@@ -150,7 +152,7 @@ const InfrastructureOverview: React.FC = () => {
                  <div className="relative p-8">
                     <div className="absolute inset-0 bg-white/5 rounded-[4rem] rotate-2"></div>
                     <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-b-[12px] border-secondary">
-                       <img src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789517/SLA_9122_j7ls0e.jpg" className="w-full h-full object-cover" alt="Students in Lab" />
+                       <img src="/images/homeGallery1.jpg" className="w-full h-full object-cover" alt="Students in Lab" />
                        <div className="absolute inset-0 bg-black/20 flex items-center justify-center group cursor-pointer">
                           <div className="w-20 h-20 rounded-full bg-secondary text-white flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
                              <Play fill="white" size={24} />

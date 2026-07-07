@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   Search, ChevronDown, HelpCircle, MessageCircle, 
   Phone, Mail, ArrowRight, UserCheck, BookOpen, 
@@ -105,11 +106,12 @@ const Faqs: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Faqs" />
       {/* Editorial Hero */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover grayscale brightness-50" 
             alt="Support Desk" 
           />
@@ -243,7 +245,7 @@ const Faqs: React.FC = () => {
 
       {/* Support Hotlines */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
          <div className="container mx-auto px-6 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                {[

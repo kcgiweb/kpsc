@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import SEO from '../components/SEO';
 import { 
   Calendar, ArrowRight, Newspaper, Bell, 
   Download, FileText, ChevronRight, Share2, 
@@ -34,7 +35,7 @@ const News: React.FC = () => {
       title: 'KPS Achieves 100% Distinction in CBSE Class 12 Board Results',
       date: 'May 12, 2024',
       excerpt: 'Once again, our students have demonstrated academic excellence with an incredible 100% distinction rate in the recently announced board results.',
-      image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80',
+      image: '/images/homeAcademics.JPG',
       featured: true
     },
     {
@@ -43,7 +44,7 @@ const News: React.FC = () => {
       title: 'Annual Inter-School Athletics Championship Highlights',
       date: 'April 28, 2024',
       excerpt: 'The KPS Wolves took home 12 Gold medals at the state-level athletics championship held at the Kanteerava Stadium.',
-      image: 'https://images.unsplash.com/photo-1544922650-1499b8443316?auto=format&fit=crop&q=80',
+      image: '/images/homeAcademics.JPG',
       featured: false
     },
     {
@@ -52,7 +53,7 @@ const News: React.FC = () => {
       title: 'Robotics Wing Unveils First Student-Built AI Assistant',
       date: 'April 15, 2024',
       excerpt: 'Our Grade 11 science students successfully programmed a campus-guide robot that uses generative AI to help visitors.',
-      image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80',
+      image: '/images/homeAcademics.JPG',
       featured: false
     },
     {
@@ -61,7 +62,7 @@ const News: React.FC = () => {
       title: 'KPS Principal Honored with National Educator Award',
       date: 'March 22, 2024',
       excerpt: 'Mrs. Anjali Hegde was recognized for her innovative pedagogical reforms and contribution to holistic student development.',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80',
+      image: '/images/homeAcademics.JPG',
       featured: false
     },
     {
@@ -70,7 +71,7 @@ const News: React.FC = () => {
       title: 'Sustainable KPS: Full Solar Transition Completed',
       date: 'March 10, 2024',
       excerpt: 'The school successfully completed its transition to 100% renewable energy, setting a green benchmark for schools in India.',
-      image: 'https://images.unsplash.com/photo-1592285338270-488b440b4ec2?auto=format&fit=crop&q=80',
+      image: '/images/homeAcademics.JPG',
       featured: false
     },
     {
@@ -79,7 +80,7 @@ const News: React.FC = () => {
       title: 'Summer Enrichment Program 2024: Registration Open',
       date: 'February 25, 2024',
       excerpt: 'Applications are now being invited for our specialized summer workshops in Creative Writing, Coding, and Classical Music.',
-      image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80',
+      image: '/images/homeAcademics.JPG',
       featured: false
     }
   ];
@@ -101,11 +102,12 @@ const News: React.FC = () => {
 
   return (
     <main className="bg-[#fcfcfc] min-h-screen">
+      <SEO title="News" />
       {/* Editorial Hero */}
       <section className="relative h-[55vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover grayscale brightness-50" 
             alt="Newspaper background" 
           />
@@ -282,7 +284,7 @@ const News: React.FC = () => {
 
       {/* Social Media Grid Callout */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
          <div className="container mx-auto px-6 relative z-10 text-center">
             <h2 className="text-3xl md:text-5xl font-serif font-bold mb-12 italic">Join the <span className="text-secondary">Conversation.</span></h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

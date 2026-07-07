@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Sparkles, Brain, Compass, Users, Heart, BookOpen, Quote, Star, Anchor } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -72,11 +73,12 @@ const Philosophy: React.FC = () => {
 
   return (
     <main className="bg-white">
+      <SEO title="Philosophy" />
       {/* Cinematic Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover scale-105 animate-[zoom_20s_infinite_alternate]" 
             alt="Philosophy Hero" 
           />
@@ -107,7 +109,7 @@ const Philosophy: React.FC = () => {
               <div className="relative">
                 <div className="absolute -top-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80" 
+                  src="/images/homeAcademics.JPG" 
                   className="rounded-[3rem] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] relative z-10 w-full" 
                   alt="Students Learning" 
                 />

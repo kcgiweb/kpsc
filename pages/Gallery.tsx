@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import SEO from '../components/SEO';
 import { 
   Search, Filter, ImageIcon, Camera, 
   X, Maximize2, Play, ChevronRight, 
@@ -27,39 +28,39 @@ const Gallery: React.FC = () => {
   const categories = ['All', 'Campus', 'Sports', 'Academic', 'Events', 'Arts'];
 
   const galleryItems = [
-    { id: 1, category: 'Events', title: 'School Gathering', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789519/IMG_4245_mx8cqy.jpg' },
-    { id: 2, category: 'Sports', title: 'Sports Action', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789518/SLA_9174_a4ekno.jpg' },
-    { id: 3, category: 'Campus', title: 'Campus Life', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789518/SLA_9136_xpa05s.jpg' },
-    { id: 4, category: 'Academic', title: 'Classroom Moments', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789517/SLA_9122_j7ls0e.jpg' },
-    { id: 5, category: 'Arts', title: 'Creative Arts', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789517/SLA_9092_dnumlx.jpg' },
-    { id: 6, category: 'Events', title: 'Celebrations', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789515/SLA_9114_ebbrop.jpg' },
-    { id: 7, category: 'Sports', title: 'Team Spirit', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789514/SLA_9091_jqdbtq.jpg' },
-    { id: 8, category: 'Campus', title: 'School Grounds', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789514/SLA_9068_oyqj10.jpg' },
-    { id: 9, category: 'Academic', title: 'Learning Together', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789514/SLA_9084_ysrthb.jpg' },
-    { id: 10, category: 'Arts', title: 'Cultural Performance', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789513/SLA_9060_emvw7m.jpg' },
-    { id: 11, category: 'Events', title: 'Special Occasion', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789511/SLA_9058_y5xdri.jpg' },
-    { id: 12, category: 'Sports', title: 'Athletic Meet', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789510/SLA_9006_itrogh.jpg' },
-    { id: 13, category: 'Campus', title: 'Student Activities', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789509/SLA_8735_uksvsy.jpg' },
-    { id: 14, category: 'Academic', title: 'Knowledge Hub', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789509/SLA_8998_yygnwc.jpg' },
-    { id: 15, category: 'Arts', title: 'Artistic Expression', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789508/SLA_8772_rgqdpt.jpg' },
-    { id: 16, category: 'Events', title: 'Community Event', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789506/SLA_8705_ccmafe.jpg' },
-    { id: 17, category: 'Sports', title: 'Game Day', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789505/SLA_8834_yhvcvo.jpg' },
-    { id: 18, category: 'Campus', title: 'Our Campus', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789503/SLA_9081_qzfugt.jpg' },
-    { id: 19, category: 'Academic', title: 'Study Session', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789504/IMG_4212_w2h410.jpg' },
-    { id: 20, category: 'Arts', title: 'Creative Works', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789504/IMG_4195_goertc.jpg' },
-    { id: 21, category: 'Events', title: 'Memorable Moments', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789503/SLA_8999_m4te5x.jpg' },
-    { id: 22, category: 'Sports', title: 'Active Lifestyle', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789502/SLA_8773_fjhm78.jpg' },
-    { id: 23, category: 'Campus', title: 'School Infrastructure', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789494/IMG_9717_uwdwbd.jpg' },
-    { id: 24, category: 'Academic', title: 'Focus and Learn', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9599_idll72.jpg' },
-    { id: 25, category: 'Arts', title: 'Performance Arts', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9579_niujfz.jpg' },
-    { id: 26, category: 'Events', title: 'Annual Function', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9690_dpt0yx.jpg' },
-    { id: 27, category: 'Sports', title: 'Sportsmanship', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9552_pjx5ir.jpg' },
-    { id: 28, category: 'Campus', title: 'Green Campus', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9668_ufygfd.jpg' },
-    { id: 29, category: 'Academic', title: 'Academic Excellence', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789492/IMG_9484_r6cbb3.jpg' },
-    { id: 30, category: 'Arts', title: 'Visual Arts', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789492/IMG_9467_sdl0cb.jpg' },
-    { id: 31, category: 'Events', title: 'School Spirit', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789492/IMG_9595_eiqj6a.jpg' },
-    { id: 32, category: 'Campus', title: 'Modern Facilities', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789079/SLA_8805_mg8tx0.jpg' },
-    { id: 33, category: 'Academic', title: 'Future Leaders', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789079/SLA_8937_kxomhs.jpg' },
+    { id: 1, category: 'Events', title: 'School Gathering', url: '/images/homeGallery.jpg' },
+    { id: 2, category: 'Sports', title: 'Sports Action', url: '/images/IMG_9757.JPG' },
+    { id: 3, category: 'Campus', title: 'Campus Life', url: '/images/homeGallery1.jpg' },
+    { id: 4, category: 'Academic', title: 'Classroom Moments', url: '/images/homeAcademics.JPG' },
+    { id: 5, category: 'Arts', title: 'Creative Arts', url: '/images/IMG_9762.JPG' },
+    { id: 6, category: 'Events', title: 'Celebrations', url: '/images/homeGallery.jpg' },
+    { id: 7, category: 'Sports', title: 'Team Spirit', url: '/images/IMG_9757.JPG' },
+    { id: 8, category: 'Campus', title: 'School Grounds', url: '/images/homeGallery1.jpg' },
+    { id: 9, category: 'Academic', title: 'Learning Together', url: '/images/home-about-pic.JPG' },
+    { id: 10, category: 'Arts', title: 'Cultural Performance', url: '/images/IMG_9762.JPG' },
+    { id: 11, category: 'Events', title: 'Special Occasion', url: '/images/homeGallery.jpg' },
+    { id: 12, category: 'Sports', title: 'Athletic Meet', url: '/images/IMG_9757.JPG' },
+    { id: 13, category: 'Campus', title: 'Student Activities', url: '/images/homeGallery1.jpg' },
+    { id: 14, category: 'Academic', title: 'Knowledge Hub', url: '/images/homeAcademics.JPG' },
+    { id: 15, category: 'Arts', title: 'Artistic Expression', url: '/images/IMG_9762.JPG' },
+    { id: 16, category: 'Events', title: 'Community Event', url: '/images/homeGallery.jpg' },
+    { id: 17, category: 'Sports', title: 'Game Day', url: '/images/IMG_9757.JPG' },
+    { id: 18, category: 'Campus', title: 'Our Campus', url: '/images/homeGallery1.jpg' },
+    { id: 19, category: 'Academic', title: 'Study Session', url: '/images/homeAcademics.JPG' },
+    { id: 20, category: 'Arts', title: 'Creative Works', url: '/images/IMG_9762.JPG' },
+    { id: 21, category: 'Events', title: 'Memorable Moments', url: '/images/homeGallery.jpg' },
+    { id: 22, category: 'Sports', title: 'Active Lifestyle', url: '/images/IMG_9757.JPG' },
+    { id: 23, category: 'Campus', title: 'School Infrastructure', url: '/images/homeGallery1.jpg' },
+    { id: 24, category: 'Academic', title: 'Focus and Learn', url: '/images/homeAcademics.JPG' },
+    { id: 25, category: 'Arts', title: 'Performance Arts', url: '/images/IMG_9762.JPG' },
+    { id: 26, category: 'Events', title: 'Annual Function', url: '/images/homeGallery.jpg' },
+    { id: 27, category: 'Sports', title: 'Sportsmanship', url: '/images/IMG_9757.JPG' },
+    { id: 28, category: 'Campus', title: 'Green Campus', url: '/images/homeGallery1.jpg' },
+    { id: 29, category: 'Academic', title: 'Academic Excellence', url: '/images/homeAcademics.JPG' },
+    { id: 30, category: 'Arts', title: 'Visual Arts', url: '/images/IMG_9762.JPG' },
+    { id: 31, category: 'Events', title: 'School Spirit', url: '/images/homeGallery.jpg' },
+    { id: 32, category: 'Campus', title: 'Modern Facilities', url: '/images/homeGallery1.jpg' },
+    { id: 33, category: 'Academic', title: 'Future Leaders', url: '/images/homeAcademics.JPG' },
   ];
 
   const filteredItems = activeFilter === 'All' 
@@ -68,11 +69,12 @@ const Gallery: React.FC = () => {
 
   return (
     <main className="bg-[#fcfcfc] min-h-screen">
+      <SEO title="Gallery" />
       {/* Editorial Hero */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover grayscale brightness-50" 
             alt="Photography background" 
           />
@@ -150,7 +152,7 @@ const Gallery: React.FC = () => {
 
       {/* Media Stats Banner */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
             {[

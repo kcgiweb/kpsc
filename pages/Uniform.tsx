@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   Shirt, Shield, CheckCircle2, ShoppingBag, 
   Scissors, Palette, Info, Download, 
@@ -73,11 +74,12 @@ const Uniform: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Uniform" />
       {/* Hero Section */}
       <section className="relative h-[55vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover grayscale brightness-50" 
             alt="School Uniform and Identity" 
           />
@@ -172,7 +174,7 @@ const Uniform: React.FC = () => {
 
       {/* Grooming Standards */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <div className="max-w-3xl mx-auto mb-20 reveal">
              <h4 className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] mb-4">Aesthetics of Excellence</h4>
@@ -206,7 +208,7 @@ const Uniform: React.FC = () => {
            <div className="bg-gray-50 rounded-[4rem] p-12 lg:p-24 shadow-2xl shadow-primary/5 flex flex-col lg:flex-row items-center gap-16 reveal">
               <div className="lg:w-1/2">
                  <div className="relative rounded-[3rem] overflow-hidden shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="School Uniform Shop" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="School Uniform Shop" />
                     <div className="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
                  </div>
               </div>

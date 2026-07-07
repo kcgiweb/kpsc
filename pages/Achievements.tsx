@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   Trophy, Medal, Star, Target, Zap, 
   ArrowRight, ChevronRight, Award, 
@@ -67,11 +68,12 @@ const Achievements: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Achievements" />
       {/* Editorial Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1578948856697-db91d2366503?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover scale-100 animate-[zoom_20s_infinite_alternate]" 
             alt="Awards and Trophies" 
           />
@@ -120,7 +122,7 @@ const Achievements: React.FC = () => {
                <div className="relative p-8">
                   <div className="absolute inset-0 bg-primary/5 rounded-[4rem] rotate-3 border border-primary/10"></div>
                   <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-b-[12px] border-secondary">
-                     <img src="https://images.unsplash.com/photo-1544922650-1499b8443316?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Successful Students" />
+                     <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Successful Students" />
                      <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                      <div className="absolute bottom-10 left-10 text-white">
                         <Trophy className="text-secondary mb-4" size={40} />
@@ -149,7 +151,7 @@ const Achievements: React.FC = () => {
                 org: "Education Today",
                 year: "2023",
                 desc: "Ranked No.1 in Co-Curricular Education among India’s Top CBSE Schools. This recognition highlights Karnataka Public School’s strong focus on holistic development through sports, arts, and extracurricular programs.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616851/IMG_9744_ivqkmh.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-orange-50"
               },
               {
@@ -157,7 +159,7 @@ const Achievements: React.FC = () => {
                 org: "Holistic Education",
                 year: "2023",
                 desc: "Recognized among India’s Top CBSE Schools for excellence in holistic education, emphasizing balanced growth through academics, creativity, and life-skills development.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616851/IMG_9746_xpniah.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-blue-50"
               },
               {
@@ -165,7 +167,7 @@ const Achievements: React.FC = () => {
                 org: "MEGA",
                 year: "2022",
                 desc: "Awarded by Manipal Educational Global Alliance (MEGA) for implementing innovative teaching methods and modern curriculum strategies that enhance student engagement and practical learning.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616852/IMG_9749_zxmjth.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-green-50"
               },
               {
@@ -173,7 +175,7 @@ const Achievements: React.FC = () => {
                 org: "ITC",
                 year: "2025",
                 desc: "Received the Appreciation Award for outstanding commitment to sustainability, promoting eco-friendly initiatives, recycling programs, and environmental awareness within the school community.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616852/IMG_9750_orgg6p.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-yellow-50"
               },
               {
@@ -181,7 +183,7 @@ const Achievements: React.FC = () => {
                 org: "Throwball (Girls)",
                 year: "2025",
                 desc: "The girls’ throwball team secured Runner-Up position, demonstrating strong teamwork, dedication, and sporting excellence.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616853/IMG_9751_ds06j9.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-red-50"
               },
               {
@@ -189,7 +191,7 @@ const Achievements: React.FC = () => {
                 org: "Winners",
                 year: "2025",
                 desc: "Karnataka Public School achieved First Place in the Smash League Championship, reflecting the school’s active participation and success in competitive sports.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616851/IMG_9753_npkxir.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-purple-50"
               },
               {
@@ -197,7 +199,7 @@ const Achievements: React.FC = () => {
                 org: "MEGA",
                 year: "2022",
                 desc: "Recognized by Manipal Educational Global Alliance for excellence in curriculum innovation and leadership in modern K-12 education practices.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616852/IMG_9755_tyfjqs.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-indigo-50"
               },
               {
@@ -205,7 +207,7 @@ const Achievements: React.FC = () => {
                 org: "Merit Awards & Market Research",
                 year: "2017",
                 desc: "Awarded as the Best CBSE School in Bangalore by Merit Awards & Market Research, acknowledging the institution’s outstanding academic performance and quality education.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616855/IMG_9756_e5vbyi.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-pink-50"
               },
               {
@@ -213,7 +215,7 @@ const Achievements: React.FC = () => {
                 org: "Oxford University Press",
                 year: "2024",
                 desc: "Karnataka Public School partnered with Oxford University Press to adopt the Oxford Advantage Programme, enhancing teaching quality with global educational resources.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616854/IMG_9758_wajy0u.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-teal-50"
               },
               {
@@ -221,7 +223,7 @@ const Achievements: React.FC = () => {
                 org: "Education Today",
                 year: "2025",
                 desc: "Honored for excellence in extracurricular programs that support creativity, leadership, cultural activities, and student talent development.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616856/IMG_9760_dzx3c9.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-cyan-50"
               },
               {
@@ -229,7 +231,7 @@ const Achievements: React.FC = () => {
                 org: "Bengaluru",
                 year: "2025",
                 desc: "Recognized for Excellence in Sustainable and Holistic Growth Programs, highlighting the school’s balanced approach to academics, innovation, and student well-being.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616856/IMG_9761_kkvbwn.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-emerald-50"
               },
               {
@@ -237,7 +239,7 @@ const Achievements: React.FC = () => {
                 org: "Education Today",
                 year: "2023",
                 desc: "Ranked among India’s Top CBSE Schools – Parameter Wise, achieving No.1 position in Co-Curricular Education.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772616889/IMG_9763_lafit2.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-rose-50"
               },
               {
@@ -245,7 +247,7 @@ const Achievements: React.FC = () => {
                 org: "Winners",
                 year: "2025",
                 desc: "The girls’ throwball team secured First Place, showcasing the school’s commitment to sports excellence and student achievement.",
-                image: "https://res.cloudinary.com/dbkmzja6c/image/upload/v1772617100/IMG_9764_k1la2t.jpg",
+                image: "/images/homeGallery1.jpg",
                 bg: "bg-amber-50"
               }
             ].map((award, i) => (
@@ -295,7 +297,7 @@ const Achievements: React.FC = () => {
 
       {/* Highlights Banner */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
             {highlights.map((stat, i) => (
@@ -340,7 +342,7 @@ const Achievements: React.FC = () => {
               </div>
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="relative rounded-[4rem] overflow-hidden shadow-2xl border-b-[10px] border-secondary">
-                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Graduation Day" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Graduation Day" />
                  </div>
               </div>
            </div>
@@ -373,7 +375,7 @@ const Achievements: React.FC = () => {
 
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1514525253361-bee1455d082c?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Cultural Success" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Cultural Success" />
                  </div>
               </div>
            </div>

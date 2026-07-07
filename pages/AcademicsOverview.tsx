@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { BookOpen, Target, Sparkles, Brain, Microscope, Globe, Music, Laptop, GraduationCap, ChevronRight, ArrowRight, Lightbulb } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -34,11 +35,12 @@ const AcademicsOverview: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Academics Overview" />
       {/* Editorial Hero */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover" 
             alt="Students in a bright classroom" 
           />
@@ -103,7 +105,7 @@ const AcademicsOverview: React.FC = () => {
 
       {/* Departments Section */}
       <section className="py-24 bg-primary relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-20 reveal">
             <h4 className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] mb-4">Academic Domains</h4>
@@ -168,7 +170,7 @@ const AcademicsOverview: React.FC = () => {
                <div className="relative p-6">
                   <div className="absolute inset-0 bg-primary/5 rounded-[4rem] -rotate-3"></div>
                   <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl">
-                     <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Student using tablet" />
+                     <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Student using tablet" />
                   </div>
                </div>
             </div>

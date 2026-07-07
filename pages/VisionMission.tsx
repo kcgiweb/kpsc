@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Target, Eye, Rocket, ShieldCheck, Zap, Globe, Heart, Users, Compass, ChevronRight, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -79,11 +80,12 @@ const VisionMission: React.FC = () => {
 
   return (
     <main className="bg-white">
+      <SEO title="Vision Mission" />
       {/* Cinematic Hero */}
       <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover" 
             alt="Students Collaborative Learning" 
           />
@@ -124,7 +126,7 @@ const VisionMission: React.FC = () => {
               <div className="lg:w-1/2 reveal delay-200">
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/3] group">
                    <img 
-                    src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9552_pjx5ir.jpg" 
+                    src="/images/homeGallery1.jpg" 
                     alt="Students collaborating" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
                    />
@@ -162,7 +164,7 @@ const VisionMission: React.FC = () => {
              {/* Decorative Image Card to fill the grid if needed or add visual interest */}
              <div className="reveal group relative rounded-[2.5rem] overflow-hidden shadow-2xl min-h-[300px] md:col-span-2 lg:col-span-1 lg:row-span-2">
                 <img 
-                 src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9668_ufygfd.jpg" 
+                 src="/images/homeGallery1.jpg" 
                  alt="Mission in action" 
                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
                 />

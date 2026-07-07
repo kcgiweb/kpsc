@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   Package, BookOpen, Laptop, Dumbbell, 
   CheckCircle2, Info, ShoppingCart, Calendar, 
@@ -66,11 +67,12 @@ const Kit: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Kit" />
       {/* Hero Section */}
       <section className="relative h-[55vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover grayscale brightness-50" 
             alt="School Supplies and Kits" 
           />
@@ -113,7 +115,7 @@ const Kit: React.FC = () => {
               <div className="relative p-8">
                  <div className="absolute inset-0 bg-primary/5 rounded-[4rem] rotate-2"></div>
                  <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Student Kit Bag" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Student Kit Bag" />
                  </div>
               </div>
             </div>
@@ -160,7 +162,7 @@ const Kit: React.FC = () => {
 
       {/* Tech Kit Detail (Callout) */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col lg:flex-row-reverse items-center gap-20">
             <div className="lg:w-1/2 reveal">
@@ -211,7 +213,7 @@ const Kit: React.FC = () => {
            <div className="bg-gray-50 rounded-[4rem] p-12 lg:p-24 shadow-2xl shadow-primary/5 flex flex-col lg:flex-row items-center gap-16 reveal">
               <div className="lg:w-1/2">
                  <div className="relative rounded-[3rem] overflow-hidden shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Student Resource Center" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Student Resource Center" />
                     <div className="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
                  </div>
               </div>

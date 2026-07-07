@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { ShieldCheck, Target, Zap, Globe, Heart, Award, CheckCircle, ArrowRight, Quote, Sparkles, Trophy, Microscope } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -65,11 +66,12 @@ const WhyKps: React.FC = () => {
 
   return (
     <main className="bg-white">
+      <SEO title="Why Kps" />
       {/* High-Impact Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover scale-100 animate-[zoom_20s_infinite_alternate]" 
             alt="Students in KPS" 
           />
@@ -119,7 +121,7 @@ const WhyKps: React.FC = () => {
 
       {/* The KPS Difference (Contrast Section) */}
       <section className="py-24 bg-primary relative overflow-hidden text-white">
-        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
            <div className="flex flex-col lg:flex-row gap-20 items-center">
               <div className="lg:w-1/2 reveal">
@@ -184,7 +186,7 @@ const WhyKps: React.FC = () => {
               </h2>
               <div className="flex flex-col items-center">
                  <div className="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-secondary p-1">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80" className="w-full h-full object-cover rounded-full" alt="Parent" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover rounded-full" alt="Parent" />
                  </div>
                  <h4 className="text-primary font-black text-sm uppercase tracking-widest">Mrs. Shalini Iyer</h4>
                  <p className="text-black font-black text-sm uppercase tracking-widest mt-1">Parent of Grade 9 Student</p>

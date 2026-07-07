@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   Clock, Sun, Coffee, Moon, Calendar, 
   MapPin, Phone, Users, CheckCircle2, 
@@ -61,11 +62,12 @@ const Timings: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Timings" />
       {/* Cinematic Hero */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1495539406979-bf61750d38ad?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover animate-[zoom_20s_infinite_alternate]" 
             alt="School clock and corridor" 
           />
@@ -115,7 +117,7 @@ const Timings: React.FC = () => {
 
       {/* Daily Milestones */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col lg:flex-row gap-20 items-center">
             <div className="lg:w-1/2 reveal">
@@ -188,7 +190,7 @@ const Timings: React.FC = () => {
                </div>
                <div className="lg:w-1/2 reveal delay-400">
                   <div className="relative rounded-[4rem] overflow-hidden shadow-2xl border-b-[10px] border-secondary">
-                     <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="School Administration Office" />
+                     <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="School Administration Office" />
                   </div>
                </div>
             </div>

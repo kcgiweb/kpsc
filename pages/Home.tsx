@@ -1,5 +1,6 @@
 
 import React, { useRef, useEffect, useState } from 'react';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import {
   ArrowRight, BookOpen, Users, Trophy, ShieldCheck,
@@ -24,12 +25,12 @@ const Home: React.FC = () => {
   const bgPatternUrl = "/images/bgPatternUrl.png";
 
   const galleryItems = [
-    { id: 1, category: 'Sports', title: 'Sports Day', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789518/SLA_9174_a4ekno.jpg' },
-    { id: 2, category: 'Academic', title: 'Classroom Moments', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789517/SLA_9122_j7ls0e.jpg' },
-    { id: 3, category: 'Events', title: 'Celebrations', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789515/SLA_9114_ebbrop.jpg' },
-    { id: 4, category: 'Campus', title: 'School Grounds', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789514/SLA_9068_oyqj10.jpg' },
-    { id: 5, category: 'Academic', title: 'Arts & Crafts', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789517/SLA_9092_dnumlx.jpg' },
-    { id: 6, category: 'Academic', title: 'Learning Together', url: 'https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789514/SLA_9084_ysrthb.jpg' },
+    { id: 1, category: 'Sports', title: 'Sports Day', url: '/images/IMG_9757.JPG' },
+    { id: 2, category: 'Academic', title: 'Classroom Moments', url: '/images/homeAcademics.JPG' },
+    { id: 3, category: 'Events', title: 'Celebrations', url: '/images/homeGallery.jpg' },
+    { id: 4, category: 'Campus', title: 'School Grounds', url: '/images/homeGallery1.jpg' },
+    { id: 5, category: 'Academic', title: 'Arts & Crafts', url: '/images/IMG_9762.JPG' },
+    { id: 6, category: 'Academic', title: 'Learning Together', url: '/images/home-about-pic.JPG' },
   ];
 
   const filteredItems = activeFilter === 'All'
@@ -95,11 +96,11 @@ const Home: React.FC = () => {
   }, [isAlumniPaused, isFeedbackPaused]);
 
   const alumniData = [
-    { name: "Darshan K S", image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=200&h=200", school: "Karnataka Public School, Batch 2018", field: "Computer Science & Information Technology", uni: "Manipal Institute of Technology (MIT), Manipal University", loc: "Australia" },
-    { name: "Shrujana A", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200", school: "Karnataka Public School, Batch 2022", field: "Economics & Commerce", uni: "Mount Carmel College", loc: "India" },
-    { name: "Nida Fathima", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200", school: "Karnataka Public School, Batch 2007", field: "Engineering & Technology", uni: "RV College of Engineering (RVCE)", loc: "India" },
-    { name: "Ashish Ahuja", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200", school: "Karnataka Public School, Batch 2020", field: "Engineering & Technology", uni: "Indian Institute of Technology, Kanpur (IIT Kanpur)", loc: "India" },
-    { name: "Meera Nair", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200", school: "Karnataka Public School, Batch 2014", field: "Public Policy & Law", uni: "National Law School (NLSIU)", loc: "India" }
+    { name: "Darshan K S", image: "/images/homeAcademics.JPG", school: "Karnataka Public School, Batch 2018", field: "Computer Science & Information Technology", uni: "Manipal Institute of Technology (MIT), Manipal University", loc: "Australia" },
+    { name: "Shrujana A", image: "/images/homeAcademics.JPG", school: "Karnataka Public School, Batch 2022", field: "Economics & Commerce", uni: "Mount Carmel College", loc: "India" },
+    { name: "Nida Fathima", image: "/images/homeAcademics.JPG", school: "Karnataka Public School, Batch 2007", field: "Engineering & Technology", uni: "RV College of Engineering (RVCE)", loc: "India" },
+    { name: "Ashish Ahuja", image: "/images/homeAcademics.JPG", school: "Karnataka Public School, Batch 2020", field: "Engineering & Technology", uni: "Indian Institute of Technology, Kanpur (IIT Kanpur)", loc: "India" },
+    { name: "Meera Nair", image: "/images/homeAcademics.JPG", school: "Karnataka Public School, Batch 2014", field: "Public Policy & Law", uni: "National Law School (NLSIU)", loc: "India" }
   ];
 
   const feedbackData = [
@@ -220,6 +221,7 @@ const Home: React.FC = () => {
 
   return (
     <main className="overflow-hidden relative bg-white">
+      <SEO title="Home" />
       {/* Background Pattern Layer */}
       <div
         className="fixed inset-0 z-0 opacity-10 pointer-events-none fixed-bg-pattern"

@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Microscope, Monitor, Shield, Bus, HeartPulse, Zap, Music, Play, ChevronRight, CheckCircle2 } from 'lucide-react';
 
 const InfrastructureDetails: React.FC = () => {
@@ -25,9 +26,10 @@ const InfrastructureDetails: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Infrastructure Details" />
       {/* Editorial Hero */}
       <section className="relative h-[45vh] flex items-center justify-center overflow-hidden bg-primary">
-         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
          <div className="container mx-auto px-6 relative z-10 text-center">
             <h4 className="text-secondary font-black uppercase tracking-[0.5em] text-[10px] mb-6 reveal">Technical Specifications</h4>
             <h1 className="text-white text-5xl md:text-7xl font-serif font-black mb-4 reveal delay-100">Estate <span className="text-secondary italic">Intelligence.</span></h1>
@@ -65,10 +67,10 @@ const InfrastructureDetails: React.FC = () => {
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="grid grid-cols-2 gap-4">
                     <div className="rounded-[2.5rem] overflow-hidden shadow-2xl h-80">
-                       <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Classroom 1" />
+                       <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Classroom 1" />
                     </div>
                     <div className="rounded-[2.5rem] overflow-hidden shadow-2xl h-80 translate-y-8">
-                       <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Classroom 2" />
+                       <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Classroom 2" />
                     </div>
                  </div>
               </div>
@@ -132,7 +134,7 @@ const InfrastructureDetails: React.FC = () => {
               </div>
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="relative rounded-[4rem] overflow-hidden shadow-2xl border-b-[12px] border-secondary">
-                    <img src="https://images.unsplash.com/photo-1514525253361-bee1455d082c?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="School Auditorium" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="School Auditorium" />
                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
                        <Play className="text-white fill-white cursor-pointer" size={64} />
                     </div>
@@ -144,7 +146,7 @@ const InfrastructureDetails: React.FC = () => {
 
       {/* Logistics & Fleet */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
          <div className="container mx-auto px-6 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-20 reveal">
                <h4 className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] mb-4">Transport Logistics</h4>

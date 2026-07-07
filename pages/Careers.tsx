@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Briefcase, Mail, MapPin, Clock, CheckCircle2, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -58,11 +59,12 @@ const Careers: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Careers" />
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789502/SLA_8773_fjhm78.jpg" 
+            src="/images/homeGallery1.jpg" 
             className="w-full h-full object-cover" 
             alt="Careers at KPS" 
           />

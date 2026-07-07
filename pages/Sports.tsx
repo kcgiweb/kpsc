@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   Trophy, Medal, Dumbbell, Target, 
   Zap, ArrowRight, ChevronRight, Award, 
@@ -69,11 +70,12 @@ const Sports: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Sports" />
       {/* Editorial Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789515/SLA_9114_ebbrop.jpg" 
+            src="/images/homeGallery1.jpg" 
             className="w-full h-full object-cover scale-100 animate-[zoom_20s_infinite_alternate]" 
             alt="School Sports Action" 
           />
@@ -121,7 +123,7 @@ const Sports: React.FC = () => {
                <div className="relative p-8">
                   <div className="absolute inset-0 bg-primary/5 rounded-[4rem] rotate-3 border border-primary/10"></div>
                   <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-b-[12px] border-secondary">
-                     <img src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789514/SLA_9091_jqdbtq.jpg" className="w-full h-full object-cover" alt="Football Match" />
+                     <img src="/images/homeGallery1.jpg" className="w-full h-full object-cover" alt="Football Match" />
                      <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                      <div className="absolute bottom-10 left-10 text-white">
                         <Dumbbell className="text-secondary mb-4" size={40} />
@@ -166,7 +168,7 @@ const Sports: React.FC = () => {
 
       {/* Facilities Grid Section */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
            <div className="flex flex-col lg:flex-row items-center gap-20">
               <div className="lg:w-1/2 reveal">
@@ -233,7 +235,7 @@ const Sports: React.FC = () => {
               </div>
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="relative rounded-[4rem] overflow-hidden shadow-2xl border-b-[10px] border-secondary aspect-[4/5]">
-                    <img src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789514/SLA_9068_oyqj10.jpg" className="w-full h-full object-cover" alt="School Basketball Court" />
+                    <img src="/images/homeGallery1.jpg" className="w-full h-full object-cover" alt="School Basketball Court" />
                  </div>
               </div>
            </div>

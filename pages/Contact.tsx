@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   MapPin, Phone, Mail, Clock, 
   Facebook, Instagram, Twitter, Youtube, 
@@ -49,11 +50,12 @@ const Contact: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Contact" />
       {/* Editorial Hero */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789494/IMG_9717_uwdwbd.jpg" 
+            src="/images/homeGallery1.jpg" 
             className="w-full h-full object-cover grayscale brightness-50" 
             alt="School entrance" 
           />
@@ -133,7 +135,7 @@ const Contact: React.FC = () => {
 
               {/* Conceptual Map Placeholder */}
               <div className="relative rounded-[3rem] overflow-hidden shadow-2xl h-[400px] border border-gray-200">
-                 <img src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9668_ufygfd.jpg" className="w-full h-full object-cover grayscale opacity-50" alt="Map View" />
+                 <img src="/images/homeGallery1.jpg" className="w-full h-full object-cover grayscale opacity-50" alt="Map View" />
                  <div className="absolute inset-0 flex items-center justify-center bg-primary/20 backdrop-blur-[2px]">
                     <div className="bg-white p-8 rounded-[2rem] shadow-2xl flex flex-col items-center">
                        <MapPin className="text-secondary mb-4 animate-bounce" size={48} />
@@ -177,7 +179,7 @@ const Contact: React.FC = () => {
 
       {/* Global Presence Section */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
          <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col lg:flex-row items-center gap-20">
                <div className="lg:w-1/2 reveal">

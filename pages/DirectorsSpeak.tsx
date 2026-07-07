@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Quote, Award, BookOpen, Star, Linkedin, Mail, ShieldCheck, TrendingUp, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -19,18 +20,19 @@ const DirectorsSpeak: React.FC = () => {
   }, []);
 
   const boardMembers = [
-    { name: "Prof. Basavaraj Ramanal", role: "Chairman", image: "https://res.cloudinary.com/dwoh8qevy/image/upload/v1772447924/download_1_hopo91_wo2r1d.png" },
-    { name: "Smt. Suvarna Basavaraj Ramnal", role: "Chairperson", image: "https://res.cloudinary.com/dwoh8qevy/image/upload/v1772447924/download_3_gzxfum_abause.png" },
-    { name: "Mr. Pradeep Ramnal", role: "COO", image: "https://res.cloudinary.com/dwoh8qevy/image/upload/v1772447924/download_2_cbxmzc_r1837m.png" }
+    { name: "Prof. Basavaraj Ramanal", role: "Chairman", image: "/images/Chairman_dml3ot.png" },
+    { name: "Smt. Suvarna Basavaraj Ramnal", role: "Chairperson", image: "/images/download_3_gzxfum_abause.png" },
+    { name: "Mr. Pradeep Ramnal", role: "COO", image: "/images/coo_uycfyc.png" }
   ];
 
   return (
     <main className="bg-white">
+      <SEO title="Directors Speak" />
       {/* Premium Hero */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80" 
+            src="/images/homeGallery1.jpg" 
             className="w-full h-full object-cover" 
             alt="Management Hero" 
           />
@@ -44,16 +46,16 @@ const DirectorsSpeak: React.FC = () => {
       </section>
 
       {/* Chairman's Section */}
-      <section className="py-24 relative">
+      <section className="py-16 relative">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-20 items-center">
             <div className="lg:w-2/5 reveal">
               <div className="relative p-4">
                 <div className="absolute inset-0 border-[12px] border-secondary/10 rounded-[3rem] -rotate-3 translate-x-4"></div>
-                <div className="relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(106,0,48,0.3)] group">
+                <div className="relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(106,0,48,0.3)] group bg-gray-50">
                       <img 
-                        src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772447924/download_1_hopo91_wo2r1d.png" 
-                        className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-110" 
+                        src="/images/Chairman_dml3ot.png" 
+                        className="w-full aspect-[4/5] object-cover object-top transition-transform duration-700 group-hover:scale-110" 
                         alt="Chairman" 
                       />
                       <div className="absolute bottom-0 inset-x-0 p-8 bg-gradient-to-t from-primary via-primary/40 to-transparent text-white">
@@ -99,15 +101,15 @@ const DirectorsSpeak: React.FC = () => {
       </section>
 
       {/* Chairperson's Message */}
-      <section className="py-24 bg-gray-50 overflow-hidden">
+      <section className="py-16 bg-gray-50 overflow-hidden">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row-reverse gap-20 items-center">
             <div className="lg:w-2/5 reveal">
                <div className="relative">
                   <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
                   <img 
-                    src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772447924/download_3_gzxfum_abause.png" 
-                    className="rounded-[3rem] shadow-2xl relative z-10 w-full aspect-[3/4] object-cover" 
+                    src="/images/download_3_gzxfum_abause.png" 
+                    className="rounded-[3rem] shadow-2xl relative z-10 w-full aspect-[4/5] object-cover object-top bg-gray-50" 
                     alt="Chairperson" 
                   />
                   <div className="absolute -bottom-10 -left-10 bg-white p-10 rounded-[2.5rem] shadow-2xl z-20 border border-gray-100">
@@ -151,7 +153,7 @@ const DirectorsSpeak: React.FC = () => {
       </section>
 
       {/* The Governing Council */}
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-20 reveal">
             <h4 className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] mb-4">Board of Directors</h4>
@@ -162,8 +164,8 @@ const DirectorsSpeak: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {boardMembers.map((member, i) => (
               <div key={i} className="reveal group" style={{ transitionDelay: `${i * 200}ms` }}>
-                <div className="relative overflow-hidden rounded-[2.5rem] mb-6 aspect-square shadow-xl transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
-                   <img src={member.image} className="w-full h-full object-cover transition-all duration-700" alt={member.name} />
+                <div className="relative overflow-hidden rounded-[2.5rem] mb-6 aspect-[4/5] shadow-xl transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 bg-gray-50">
+                   <img src={member.image} className="w-full h-full object-cover object-top transition-all duration-700" alt={member.name} />
                    <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-primary group-hover:text-secondary transition-colors">{member.name}</h3>
@@ -175,8 +177,8 @@ const DirectorsSpeak: React.FC = () => {
       </section>
 
       {/* Core Principles Banner */}
-      <section className="py-24 bg-primary relative overflow-hidden text-white text-center">
-         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+      <section className="py-20 bg-primary relative overflow-hidden text-white text-center">
+         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/bgPatternUrl.png')`, backgroundSize: '400px' }}></div>
          <div className="container mx-auto px-6 relative z-10 reveal">
             <h2 className="text-3xl md:text-5xl font-serif font-bold mb-12">"Leadership is not a position or a title, <br /> it is action and example."</h2>
             <div className="flex flex-wrap justify-center gap-12">
@@ -196,13 +198,44 @@ const DirectorsSpeak: React.FC = () => {
          </div>
       </section>
 
+      {/* Campus Highlights Section */}
+      <section className="py-16 bg-gray-50 overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col lg:flex-row items-end justify-between mb-10">
+            <div className="max-w-2xl">
+              <h4 className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] mb-4">Campus Life</h4>
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary">The Environment We Cultivate</h2>
+            </div>
+            <p className="text-black/60 max-w-sm mt-6 lg:mt-0 italic font-medium">"Our infrastructure is designed to inspire curiosity and provide a sanctuary for deep learning."</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+             <div className="reveal h-[400px] rounded-[2.5rem] overflow-hidden shadow-xl group">
+                <img src="/images/homeGallery.jpg" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Campus 1" />
+             </div>
+             <div className="reveal h-[400px] rounded-[2.5rem] overflow-hidden shadow-xl group lg:mt-12" style={{ transitionDelay: '200ms' }}>
+                <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Academics" />
+             </div>
+             <div className="reveal h-[400px] rounded-[2.5rem] overflow-hidden shadow-xl group" style={{ transitionDelay: '400ms' }}>
+                <img src="/images/homeFacilities.png" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Facilities" />
+             </div>
+             <div className="reveal h-[400px] rounded-[2.5rem] overflow-hidden shadow-xl group lg:mt-12" style={{ transitionDelay: '600ms' }}>
+                <img src="/images/home-about-pic.JPG" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Students" />
+             </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer CTA */}
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6 text-center">
           <div className="bg-secondary p-1 rounded-[4rem] shadow-2xl reveal">
-             <div className="bg-white rounded-[3.8rem] py-16 px-10">
-                <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8 leading-tight">Partner with Us in Your <br /> Child's Success.</h2>
-                <div className="flex flex-col sm:flex-row justify-center gap-6">
+             <div className="bg-white rounded-[3.8rem] py-12 px-10 relative overflow-hidden">
+                <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+                   <img src="/images/homeGallery1.jpg" className="w-full h-full object-cover" alt="CTA Background" />
+                </div>
+                <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8 leading-tight relative z-10">Partner with Us in Your <br /> Child's Success.</h2>
+                <div className="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
                    <Link to="/admissions/process" className="bg-primary text-white px-12 py-5 rounded-full font-black text-xs uppercase tracking-widest hover:bg-secondary transition-all shadow-xl">
                       Start Admission
                    </Link>

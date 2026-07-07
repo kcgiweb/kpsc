@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   GraduationCap, TrendingUp, Award, Star, 
   Users, BarChart3, Zap, ArrowRight, 
@@ -29,9 +30,9 @@ const Results: React.FC = () => {
   ];
 
   const toppers = [
-    { name: "Aditi Sharma", stream: "Science", score: "98.4%", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200" },
-    { name: "Rohan Hegde", stream: "Commerce", score: "97.8%", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200" },
-    { name: "Sanya Malhotra", stream: "Humanities", score: "98.1%", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200" }
+    { name: "Aditi Sharma", stream: "Science", score: "98.4%", image: "/images/homeAcademics.JPG" },
+    { name: "Rohan Hegde", stream: "Commerce", score: "97.8%", image: "/images/homeAcademics.JPG" },
+    { name: "Sanya Malhotra", stream: "Humanities", score: "98.1%", image: "/images/homeAcademics.JPG" }
   ];
 
   const competitiveExamStats = [
@@ -43,11 +44,12 @@ const Results: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Results" />
       {/* Editorial Hero */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover scale-100 animate-[zoom_20s_infinite_alternate]" 
             alt="Graduating Students" 
           />
@@ -161,7 +163,7 @@ const Results: React.FC = () => {
 
       {/* Competitive Exam Success */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
            <div className="flex flex-col lg:flex-row-reverse items-center gap-20">
               <div className="lg:w-1/2 reveal">
@@ -185,7 +187,7 @@ const Results: React.FC = () => {
 
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="relative rounded-[4rem] overflow-hidden shadow-2xl border-8 border-white/5">
-                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Student in Graduation" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Student in Graduation" />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
                     <div className="absolute bottom-10 left-10 text-white">
                        <Quote className="text-secondary mb-4" size={40} />

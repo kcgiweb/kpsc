@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { HeartPulse, ShieldCheck, Heart, UserCheck, Stethoscope, Droplets, Smile, Clock, Info } from 'lucide-react';
 
 const Wellness: React.FC = () => {
@@ -26,8 +27,9 @@ const Wellness: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Wellness" />
       <section className="relative h-[45vh] flex items-center justify-center overflow-hidden bg-primary">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h4 className="text-secondary font-black uppercase tracking-[0.5em] text-[10px] mb-6 reveal">Holistic Vitality</h4>
           <h1 className="text-white text-5xl md:text-7xl font-serif font-black mb-4 reveal delay-100 italic">Health & <span className="text-secondary not-italic underline decoration-2 underline-offset-8">Wellness.</span></h1>
@@ -81,7 +83,7 @@ const Wellness: React.FC = () => {
               </div>
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="relative rounded-[4rem] overflow-hidden shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Student in Wellness Center" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Student in Wellness Center" />
                  </div>
               </div>
            </div>

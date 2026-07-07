@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Shield, Camera, Users, Lock, Radio, Bell, Eye, CheckCircle2 } from 'lucide-react';
 
 const Security: React.FC = () => {
@@ -26,8 +27,9 @@ const Security: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Security" />
       <section className="relative h-[45vh] flex items-center justify-center overflow-hidden bg-primary">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h4 className="text-secondary font-black uppercase tracking-[0.5em] text-[10px] mb-6 reveal">A Zero-Compromise Campus</h4>
           <h1 className="text-white text-5xl md:text-7xl font-serif font-black mb-4 reveal delay-100 italic">Campus <span className="text-secondary not-italic underline decoration-2 underline-offset-8">Security.</span></h1>
@@ -56,7 +58,7 @@ const Security: React.FC = () => {
       </section>
 
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
          <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col lg:flex-row items-center gap-20">
                <div className="lg:w-1/2 reveal">

@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Calendar, Download, Sun, Snowflake, Flag, Coffee, ChevronRight, Info } from 'lucide-react';
 
 const Holidays: React.FC = () => {
@@ -111,9 +112,10 @@ const Holidays: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Holidays" />
       {/* Editorial Hero */}
       <section className="relative h-[45vh] flex items-center justify-center overflow-hidden bg-primary">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h4 className="text-secondary font-black uppercase tracking-[0.5em] text-[10px] mb-6 reveal">Academic Timeline</h4>
           <h1 className="text-white text-5xl md:text-7xl font-serif font-black mb-6 reveal delay-100">Holiday <span className="text-secondary italic">Calendar.</span></h1>

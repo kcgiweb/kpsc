@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   CheckCircle2, Clock, Calendar, BarChart3, 
   Users, Trophy, MessageSquare, ClipboardCheck, 
@@ -31,11 +32,12 @@ const Assessment: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Assessment" />
       {/* Premium Hero */}
       <section className="relative h-[55vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover" 
             alt="Evaluation Background" 
           />
@@ -208,7 +210,7 @@ const Assessment: React.FC = () => {
             </div>
             <div className="lg:w-1/2 reveal delay-400">
                <div className="relative rounded-[4rem] overflow-hidden shadow-2xl border-b-[10px] border-secondary">
-                  <img src="https://images.unsplash.com/photo-1577896851231-70ef1460370e?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Parent Teacher Interaction" />
+                  <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Parent Teacher Interaction" />
                </div>
             </div>
           </div>

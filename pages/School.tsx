@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   Users, Clock, ShieldCheck, Shirt, 
   Package, Music, Trophy, Heart, 
@@ -67,11 +68,12 @@ const School: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="School" />
       {/* Editorial Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9595_eiqj6a.jpg" 
+            src="/images/homeGallery1.jpg" 
             className="w-full h-full object-cover scale-100 animate-[zoom_20s_infinite_alternate]" 
             alt="Students in School Courtyard" 
           />
@@ -120,7 +122,7 @@ const School: React.FC = () => {
                <div className="relative p-8">
                   <div className="absolute inset-0 bg-primary/5 rounded-[4rem] rotate-3 border border-primary/10"></div>
                   <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-b-[12px] border-secondary">
-                     <img src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9690_dpt0yx.jpg" className="w-full h-full object-cover" alt="Cultural Event at School" />
+                     <img src="/images/homeGallery1.jpg" className="w-full h-full object-cover" alt="Cultural Event at School" />
                      <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                      <div className="absolute bottom-10 left-10 text-white">
                         <Music className="text-secondary mb-4" size={40} />
@@ -163,7 +165,7 @@ const School: React.FC = () => {
 
       {/* Statistics Banner */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
             {studentLifeStats.map((stat, i) => (
@@ -208,7 +210,7 @@ const School: React.FC = () => {
               </div>
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="relative rounded-[4rem] overflow-hidden shadow-2xl border-b-[10px] border-secondary">
-                    <img src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789493/IMG_9579_niujfz.jpg" className="w-full h-full object-cover" alt="Students Collaborative Project" />
+                    <img src="/images/homeGallery1.jpg" className="w-full h-full object-cover" alt="Students Collaborative Project" />
                  </div>
               </div>
            </div>
@@ -241,7 +243,7 @@ const School: React.FC = () => {
 
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/3]">
-                    <img src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789506/SLA_8705_ccmafe.jpg" className="w-full h-full object-cover" alt="Student Dining" />
+                    <img src="/images/homeGallery1.jpg" className="w-full h-full object-cover" alt="Student Dining" />
                  </div>
               </div>
            </div>

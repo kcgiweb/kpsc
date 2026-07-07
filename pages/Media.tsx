@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { 
   ImageIcon, Newspaper, MessageSquare, Footprints, 
   Play, ArrowRight, ChevronRight, Video, 
@@ -59,11 +60,12 @@ const Media: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Media" />
       {/* Editorial Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover scale-100 animate-[zoom_20s_infinite_alternate]" 
             alt="School Media and Events" 
           />
@@ -112,7 +114,7 @@ const Media: React.FC = () => {
                <div className="relative p-8">
                   <div className="absolute inset-0 bg-primary/5 rounded-[4rem] rotate-3 border border-primary/10"></div>
                   <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-b-[12px] border-secondary">
-                     <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="School Cultural Event" />
+                     <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="School Cultural Event" />
                      <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                      <div className="absolute bottom-10 left-10 text-white">
                         <Camera className="text-secondary mb-4" size={40} />
@@ -155,7 +157,7 @@ const Media: React.FC = () => {
 
       {/* Featured Video Spotlight */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
            <div className="flex flex-col lg:flex-row-reverse items-center gap-20">
               <div className="lg:w-1/2 reveal">
@@ -178,7 +180,7 @@ const Media: React.FC = () => {
 
               <div className="lg:w-1/2 reveal delay-400">
                  <div className="relative rounded-[4rem] overflow-hidden shadow-2xl group cursor-pointer border-8 border-white/5">
-                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80" className="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000" alt="Video Placeholder" />
+                    <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000" alt="Video Placeholder" />
                     <div className="absolute inset-0 flex items-center justify-center">
                        <div className="w-24 h-24 rounded-full bg-secondary text-white flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
                           <Play fill="white" size={32} />

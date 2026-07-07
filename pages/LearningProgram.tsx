@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Laptop, Code, Cpu, Database, Play, Globe, Sparkles, BookOpen, GraduationCap, ChevronRight, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -27,11 +28,12 @@ const LearningProgram: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Learning Program" />
       {/* Editorial Hero */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover" 
             alt="Students in a tech-enabled classroom" 
           />
@@ -87,7 +89,7 @@ const LearningProgram: React.FC = () => {
 
       {/* The Integrated Lab Experience */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
          <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col lg:flex-row-reverse items-center gap-20">
                <div className="lg:w-1/2 reveal">
@@ -111,7 +113,7 @@ const LearningProgram: React.FC = () => {
                   <div className="relative p-6">
                      <div className="absolute inset-0 bg-white/5 rounded-[4rem] rotate-2 border border-white/10"></div>
                      <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Student in Science Lab" />
+                        <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Student in Science Lab" />
                      </div>
                   </div>
                </div>

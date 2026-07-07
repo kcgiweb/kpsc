@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import SEO from '../components/SEO';
 // Added Link to imports
 import { Link } from 'react-router-dom';
 import { Search, Filter, GraduationCap, Clock, BookOpen, Users, Mail, ChevronRight, Briefcase } from 'lucide-react';
@@ -75,9 +76,10 @@ const Faculty: React.FC = () => {
 
   return (
     <main className="bg-[#fcfcfc] min-h-screen">
+      <SEO title="Faculty" />
       {/* Premium Header - No Images */}
       <section className="bg-primary pt-40 pb-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h4 className="text-secondary font-black uppercase tracking-[0.5em] text-[10px] mb-6 reveal">Our Academic Strength</h4>
           <h1 className="text-white text-5xl md:text-7xl font-serif font-black mb-6 reveal delay-100">Faculty <span className="text-secondary italic">Directory.</span></h1>

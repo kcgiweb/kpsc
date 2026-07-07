@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { MapPin, ShieldCheck, Sun, Droplets, Wind, Globe, Microscope, Laptop, Library, Music, Dumbbell, Coffee, Compass, ArrowRight, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -19,21 +20,22 @@ const Campus: React.FC = () => {
   }, []);
 
   const landmarks = [
-    { title: "The Knowledge Pavilion", desc: "A 10,000 sq.ft state-of-the-art library and digital archive.", category: "Intellectual", img: "https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789513/SLA_9060_emvw7m.jpg" },
-    { title: "Olympic Aqua Center", desc: "Indoor heated swimming pool with professional coaching.", category: "Sports", img: "https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789511/SLA_9058_y5xdri.jpg" },
-    { title: "The Innovation Wing", desc: "Robotics hubs and NABL certified science research labs.", category: "Innovation", img: "https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789510/SLA_9006_itrogh.jpg" },
-    { title: "The Grand Amphitheater", desc: "Open-air theater for cultural festivals and school assemblies.", category: "Culture", img: "https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789509/SLA_8735_uksvsy.jpg" },
-    { title: "Green Valley Plaza", desc: "Sustainable gardens and organic farming learning zones.", category: "Wellness", img: "https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789509/SLA_8998_yygnwc.jpg" },
-    { title: "Digital Class Studios", desc: "Interactive smart learning spaces with 4K panel integration.", category: "Academia", img: "https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789508/SLA_8772_rgqdpt.jpg" }
+    { title: "The Knowledge Pavilion", desc: "A 10,000 sq.ft state-of-the-art library and digital archive.", category: "Intellectual", img: "/images/homeGallery1.jpg" },
+    { title: "Olympic Aqua Center", desc: "Indoor heated swimming pool with professional coaching.", category: "Sports", img: "/images/homeGallery1.jpg" },
+    { title: "The Innovation Wing", desc: "Robotics hubs and NABL certified science research labs.", category: "Innovation", img: "/images/homeGallery1.jpg" },
+    { title: "The Grand Amphitheater", desc: "Open-air theater for cultural festivals and school assemblies.", category: "Culture", img: "/images/homeGallery1.jpg" },
+    { title: "Green Valley Plaza", desc: "Sustainable gardens and organic farming learning zones.", category: "Wellness", img: "/images/homeGallery1.jpg" },
+    { title: "Digital Class Studios", desc: "Interactive smart learning spaces with 4K panel integration.", category: "Academia", img: "/images/homeGallery1.jpg" }
   ];
 
   return (
     <main className="bg-white">
+      <SEO title="Campus" />
       {/* Immersive Campus Hero */}
       <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789514/SLA_9084_ysrthb.jpg" 
+            src="/images/homeGallery1.jpg" 
             className="w-full h-full object-cover animate-[zoom_20s_infinite_alternate]" 
             alt="Main Campus Aerial View" 
           />
@@ -93,7 +95,7 @@ const Campus: React.FC = () => {
 
       {/* Campus Map Concept */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
          <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col lg:flex-row items-center gap-20">
                <div className="lg:w-1/2 reveal">
@@ -136,7 +138,7 @@ const Campus: React.FC = () => {
            <div className="flex flex-col lg:flex-row items-center gap-20">
               <div className="lg:w-1/2 reveal">
                  <div className="relative rounded-[4rem] overflow-hidden shadow-2xl">
-                    <img src="https://res.cloudinary.com/dwoh8qevy/image/upload/v1772789506/SLA_8705_ccmafe.jpg" className="w-full h-[500px] object-cover grayscale" alt="Campus Security" />
+                    <img src="/images/homeGallery1.jpg" className="w-full h-[500px] object-cover grayscale" alt="Campus Security" />
                     <div className="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
                     <div className="absolute top-10 left-10">
                        <ShieldCheck className="text-secondary" size={64} />

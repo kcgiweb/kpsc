@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Book, Globe, ShieldCheck, Clock, Layers, Users, Star, ArrowRight, Library as LibraryIcon, Search, Headphones } from 'lucide-react';
 
 const Library: React.FC = () => {
@@ -26,11 +27,12 @@ const Library: React.FC = () => {
 
   return (
     <main className="bg-white min-h-screen">
+      <SEO title="Library" />
       {/* Sophisticated Hero */}
       <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover" 
             alt="Library Interior" 
           />
@@ -76,7 +78,7 @@ const Library: React.FC = () => {
                <div className="relative p-8">
                   <div className="absolute inset-0 bg-primary/5 rounded-[4rem] -rotate-3"></div>
                   <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-b-[10px] border-secondary">
-                     <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Student Reading" />
+                     <img src="/images/homeAcademics.JPG" className="w-full h-full object-cover" alt="Student Reading" />
                   </div>
                </div>
             </div>
@@ -117,7 +119,7 @@ const Library: React.FC = () => {
 
       {/* Policies & Timings */}
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('https://res.cloudinary.com/dwoh8qevy/image/upload/v1771234977/bg-pattern-fdl_v7qd2s.png')`, backgroundSize: '400px' }}></div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: `url('/images/homeGallery1.jpg')`, backgroundSize: '400px' }}></div>
         <div className="container mx-auto px-6 relative z-10">
            <div className="flex flex-col lg:flex-row gap-20">
               <div className="lg:w-1/2 reveal">

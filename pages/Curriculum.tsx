@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import SEO from '../components/SEO';
 import { 
   Target, Zap, BookOpen, Layers, Lightbulb, Compass, 
   Award, Star, ArrowUpRight, GraduationCap, Globe, 
@@ -87,11 +88,12 @@ const Curriculum: React.FC = () => {
 
   return (
     <main className="bg-white">
+      <SEO title="Curriculum" />
       {/* Editorial Hero */}
       <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80" 
+            src="/images/homeAcademics.JPG" 
             className="w-full h-full object-cover" 
             alt="Curriculum Hero" 
           />
