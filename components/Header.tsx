@@ -39,31 +39,29 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <header className={`fixed w-full z-50 transition-all duration-500 ${
-        scrolled ? 'glass-header py-2 shadow-xl top-0' : 'bg-transparent py-6 lg:top-10'
-      }`}>
+      <header className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'glass-header py-2 shadow-xl top-0' : 'bg-transparent py-6 lg:top-10'
+        }`}>
         <div className="container mx-auto px-4 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="w-64 h-20 flex items-center justify-start transition-transform group-hover:scale-105 mr-8">
-               <img src="/images/kps-logo.png" alt="KPS Logo" className="w-full h-full object-contain object-left" />
+              <img src="/images/kps-logo.png" alt="KPS Logo" className="w-full h-full object-contain object-left" />
             </div>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden xl:flex items-center space-x-2">
             {NAVIGATION.map((item) => (
-              <div 
-                key={item.path} 
+              <div
+                key={item.path}
                 className="relative group px-2"
                 onMouseEnter={() => setActiveDropdown(item.label)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <div className="flex items-center space-x-1">
-                  <Link 
+                  <Link
                     to={item.path}
-                    className={`py-2 text-[12px] font-bold uppercase tracking-widest transition-colors nav-item-border ${
-                      scrolled ? 'text-black hover:text-primary' : 'text-white hover:text-secondary'
-                    }`}
+                    className={`py-2 text-[12px] font-bold uppercase tracking-widest transition-colors nav-item-border ${scrolled ? 'text-black hover:text-primary' : 'text-white hover:text-secondary'
+                      }`}
                   >
                     {item.label}
                   </Link>
@@ -87,16 +85,16 @@ const Header: React.FC = () => {
                 )}
               </div>
             ))}
-            <button 
+            <button
               onClick={openPopup}
               className="ml-6 bg-secondary text-white px-8 py-3 rounded-full text-xs font-black uppercase tracking-widest hover:bg-primary transition-all shadow-lg transform hover:-translate-y-1"
             >
-               Apply Now
+              Apply Now
             </button>
           </nav>
 
           {/* Mobile Toggle */}
-          <button 
+          <button
             className="xl:hidden p-2 z-[80] relative"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -115,8 +113,8 @@ const Header: React.FC = () => {
         <div className="flex flex-col min-h-screen pt-24 px-8 pb-10">
           {NAVIGATION.map((item) => (
             <div key={item.path} className="mb-6 border-b border-gray-100 pb-4 last:border-0">
-              <Link 
-                to={item.path} 
+              <Link
+                to={item.path}
                 className="font-black text-primary text-xl uppercase tracking-widest mb-2 block"
                 onClick={() => !item.children && setIsOpen(false)}
               >
@@ -125,8 +123,8 @@ const Header: React.FC = () => {
               {item.children && (
                 <div className="pl-4 mt-2 space-y-3 border-l-2 border-secondary/20">
                   {item.children.map((child) => (
-                    <Link 
-                      key={child.path} 
+                    <Link
+                      key={child.path}
                       to={child.path}
                       className="block text-gray-600 font-bold hover:text-secondary text-xs uppercase tracking-wider"
                       onClick={() => setIsOpen(false)}
@@ -138,7 +136,7 @@ const Header: React.FC = () => {
               )}
             </div>
           ))}
-          <button 
+          <button
             onClick={() => {
               setIsOpen(false);
               openPopup();
