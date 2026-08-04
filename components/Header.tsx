@@ -85,12 +85,14 @@ const Header: React.FC = () => {
                 )}
               </div>
             ))}
-            <button
-              onClick={openPopup}
-              className="ml-6 bg-secondary text-white px-8 py-3 rounded-full text-xs font-black uppercase tracking-widest hover:bg-primary transition-all shadow-lg transform hover:-translate-y-1"
+            <a
+              href="https://admissions.kcgiedu.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-6 bg-secondary text-white px-8 py-3 rounded-full text-xs font-black uppercase tracking-widest hover:bg-primary transition-all shadow-lg transform hover:-translate-y-1 inline-block text-center"
             >
               Apply Now
-            </button>
+            </a>
           </nav>
 
           {/* Mobile Toggle */}
@@ -136,15 +138,15 @@ const Header: React.FC = () => {
               )}
             </div>
           ))}
-          <button
-            onClick={() => {
-              setIsOpen(false);
-              openPopup();
-            }}
-            className="mt-6 w-full bg-secondary text-white text-center py-4 rounded-xl font-black text-sm uppercase tracking-[0.2em] shadow-xl hover:bg-primary transition-colors"
+          <a
+            href="https://admissions.kcgiedu.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="mt-6 w-full bg-secondary text-white text-center py-4 rounded-xl font-black text-sm uppercase tracking-[0.2em] shadow-xl hover:bg-primary transition-colors inline-block"
           >
             Admissions Open 26-27
-          </button>
+          </a>
         </div>
       </div>
     </>
