@@ -25,9 +25,13 @@ const Gallery: React.FC = () => {
     return () => observer.disconnect();
   }, [activeFilter]);
 
-  const categories = ['All', 'Campus', 'Sports', 'Academic', 'Events', 'Arts'];
+  const categories = ['All', 'Campus', 'Sports', 'Academic', 'Events', 'Arts', 'Awards'];
 
   const galleryItems = [
+    { id: 101, category: 'Awards', title: 'Category 5 — Operations Star Award', url: '/images/awards_winners/1.JPG' },
+    { id: 102, category: 'Awards', title: 'Educator Award Ceremony', url: '/images/awards_winners/2.JPG' },
+    { id: 103, category: 'Awards', title: 'Category 3 — Champion Scholastic Educator Award', url: '/images/awards_winners/3.JPG' },
+    { id: 104, category: 'Awards', title: 'Proud Winners', url: '/images/awards_winners/4.JPG' },
     { id: 1, category: 'Events', title: 'School Gathering', url: '/images/homeGallery.jpg' },
     { id: 2, category: 'Sports', title: 'Sports Action', url: '/images/IMG_9757.JPG' },
     { id: 3, category: 'Campus', title: 'Campus Life', url: '/images/homeGallery1.jpg' },

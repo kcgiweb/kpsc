@@ -36,35 +36,39 @@ const Faculty: React.FC = () => {
   ];
 
   const facultyData: FacultyMember[] = [
-    // Coordinators
-    { id: 1, name: "Ms. Arshiya Subhana G A", designation: "Senior School Coordinator", dept: "Coordination", email: "seniorschoolcoordinator@kpscbse.edu.in" },
-    { id: 2, name: "Ms. Nandini Vijay", designation: "Middle School Coordinator", dept: "Coordination", email: "middleschoolcoordinator@kpscbse.edu.in" },
-    { id: 3, name: "Ms. Pratiksha M Patil", designation: "Primary School Coordinator", dept: "Coordination", email: "primaryschoolcoordinator@kpscbse.edu.in" },
+    // Teaching Staff
+    { id: 7112, name: "Ms. Radha Vijay Kumar", designation: "Principal", dept: "Teaching Staff", email: "radha@kpscbse.edu.in" },
+    { id: 7012, name: "Ms. Arshiya Subhana G A", designation: "Senior School Coordinator / TGT Science", dept: "Teaching Staff", email: "arshiya@kpscbse.edu.in" },
+    { id: 7014, name: "Ms. Nandini Vijay", designation: "Middle School Coordinator / TGT English", dept: "Teaching Staff", email: "nandini@kpscbse.edu.in" },
+    { id: 7047, name: "Ms. Pratiksha M Patil", designation: "Primary School Coordinator / TGT English", dept: "Teaching Staff", email: "pratiksha@kpscbse.edu.in" },
+    { id: 7017, name: "Ms. Shobha Aujikar", designation: "IT Head / TGT IT/AI", dept: "Teaching Staff", email: "shobha@kpscbse.edu.in" },
+    { id: 7018, name: "Ms. Sunanda S Medegar", designation: "Kannada HOD / TGT Social & Kannada", dept: "Teaching Staff", email: "sunanda@kpscbse.edu.in" },
+    { id: 7100, name: "Ms. Sushma Tiwari", designation: "TGT Maths & Science", dept: "Teaching Staff", email: "sushma@kpscbse.edu.in" },
+    { id: 7098, name: "Ms. Hajeera Anjum", designation: "TGT English", dept: "Teaching Staff", email: "hajeera@kpscbse.edu.in" },
+    { id: 7101, name: "Ms. Khurath Afza Sn", designation: "TGT / Social", dept: "Teaching Staff", email: "khurath@kpscbse.edu.in" },
+    { id: 7052, name: "Ms. Ashwini N M", designation: "TGT Kannada", dept: "Teaching Staff", email: "ashwini@kpscbse.edu.in" },
+    { id: 7077, name: "Ms. Bindu Madhavi V", designation: "TGT Social Studies", dept: "Teaching Staff", email: "bindu@kpscbse.edu.in" },
+    { id: 7079, name: "Ms. Supriya M R", designation: "PRT Kannada", dept: "Teaching Staff", email: "supriya@kpscbse.edu.in" },
+    { id: 7082, name: "Ms. Jhansi Rani R", designation: "PRT Social Studies", dept: "Teaching Staff", email: "jhansi@kpscbse.edu.in" },
+    { id: 7083, name: "Ms. Babita Chavan", designation: "TGT Hindi", dept: "Teaching Staff", email: "babita@kpscbse.edu.in" },
+    { id: 7085, name: "Ms. Pooja Sharma", designation: "PRT Hindi", dept: "Teaching Staff", email: "pooja@kpscbse.edu.in" },
+    { id: 7103, name: "Ms. Ramitha Cuduvally", designation: "PRT English", dept: "Teaching Staff", email: "ramitha@kpscbse.edu.in" },
+    { id: 7102, name: "Ms. Pavithra N", designation: "PRT Mathematics", dept: "Teaching Staff", email: "pavithra@kpscbse.edu.in" },
+    { id: 7104, name: "Ms. Chaitra Hegde", designation: "PRT", dept: "Teaching Staff", email: "chaitra@kpscbse.edu.in" },
+    { id: 7011, name: "Mr. Nagaraj C", designation: "Physical Education Teacher", dept: "Teaching Staff", email: "nagaraj@kpscbse.edu.in" },
+    { id: 7010, name: "Mr. Ashoka C", designation: "Physical Education Teacher", dept: "Teaching Staff", email: "ashoka@kpscbse.edu.in" },
+    { id: 7062, name: "Ms. Vaishali M", designation: "PRT", dept: "Teaching Staff", email: "vaishali@kpscbse.edu.in" },
+    { id: 7109, name: "Ms. Amrin K", designation: "PRT", dept: "Teaching Staff", email: "amrin@kpscbse.edu.in" },
+    { id: 7111, name: "Ms. Sandhya Kumari", designation: "TGT Hindi", dept: "Teaching Staff", email: "sandhya@kpscbse.edu.in" },
+    { id: 7106, name: "Ms. Divya Bonthu", designation: "IT", dept: "Teaching Staff", email: "divya@kpscbse.edu.in" },
+    { id: 7107, name: "Ms. Preethi Radhakrishnan", designation: "PRT", dept: "Teaching Staff", email: "preethi@kpscbse.edu.in" },
+    { id: 7108, name: "Kavita C. Patil", designation: "PRT Art & Craft", dept: "Teaching Staff", email: "kavita@kpscbse.edu.in" },
     
-    // IT Head
-    { id: 4, name: "Ms. Shobha Aujikar", designation: "IT Head", dept: "IT & Computer Science", email: "ithead@kpscbse.edu.in" },
-    
-    // Teachers
-    { id: 5, name: "Ms. Sunanda S Medegar", designation: "Kannada HOD", dept: "Languages", email: "kannadahod@kpscbse.edu.in" },
-    { id: 6, name: "Mr. Nagaraj C", designation: "Faculty", dept: "Teaching Staff", email: "nagraj@kpscbse.edu.in" },
-    { id: 7, name: "Mr. Ashoka C", designation: "Faculty", dept: "Teaching Staff", email: "ashoka@kpscbse.edu.in" },
-    { id: 8, name: "Ms. Sheela N S", designation: "Faculty", dept: "Teaching Staff", email: "sheela@kpscbse.edu.in" },
-    { id: 9, name: "Ms. Ashwini N M", designation: "Faculty", dept: "Teaching Staff", email: "ashwin@kpscbse.edu.in" },
-    { id: 10, name: "Ms. L Rathika Gobinath", designation: "Faculty", dept: "Teaching Staff", email: "rathika@kpscbse.edu.in" },
-    { id: 11, name: "Ms. Bindu Madhavi", designation: "Faculty", dept: "Teaching Staff", email: "bindu@kpscbse.edu.in" },
-    { id: 12, name: "Ms. Supriya M R", designation: "Faculty", dept: "Teaching Staff", email: "supriya@kpscbse.edu.in" },
-    { id: 13, name: "Ms. Pavithra Kumari M", designation: "Faculty", dept: "Teaching Staff", email: "pavithra@kpscbse.edu.in" },
-    { id: 14, name: "Ms. Jhansi Rani R", designation: "Faculty", dept: "Teaching Staff", email: "jhansi@kpscbse.edu.in" },
-    { id: 15, name: "Ms. Babita Chavan", designation: "Faculty", dept: "Teaching Staff", email: "babita@kpscbse.edu.in" },
-    { id: 16, name: "Ms. Pooja Sharma", designation: "Faculty", dept: "Teaching Staff", email: "pooja@kpscbse.edu.in" },
-    { id: 17, name: "Ms. Chaithra M", designation: "Faculty", dept: "Teaching Staff", email: "chaithra@kpscbse.edu.in" },
-    
-    // Admin
-    { id: 18, name: "Ms. Sneha Kavatekar", designation: "Principal", dept: "Administration", email: "principal@kpscbse.edu.in" },
-    { id: 19, name: "Mr. Prowdaraja M G", designation: "Accounts", dept: "Administration", email: "accounts@kpscbse.edu.in" },
-    { id: 20, name: "Ms. Padamavathi Bai S", designation: "Admin Manager", dept: "Administration", email: "adminmanager@kpscbse.edu.in" },
-    { id: 21, name: "Ms. Bhavani S", designation: "ERP Associate", dept: "Administration", email: "erpassociate@kpscbse.edu.in" },
-    { id: 22, name: "Ms. Nagarathna Bai", designation: "Stores", dept: "Administration", email: "stores@kpscbse.edu.in" },
+    // Non-Teaching Staff
+    { id: 9027, name: "Mr. Prowdaraja M G", designation: "Accountant", dept: "Administration", email: "prowdaraja@kpscbse.edu.in" },
+    { id: 9028, name: "Ms. Padamavathi Bai S", designation: "Admin Manager", dept: "Administration", email: "padamavathi@kpscbse.edu.in" },
+    { id: 9029, name: "Ms. Bhavani S", designation: "ERP Associate", dept: "Administration", email: "bhavani@kpscbse.edu.in" },
+    { id: 9030, name: "Ms. Nagarathna Bai", designation: "Stores In Charge", dept: "Administration", email: "nagarathna@kpscbse.edu.in" },
   ];
 
   const filteredFaculty = facultyData.filter(f => {

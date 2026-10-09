@@ -25,12 +25,15 @@ const Home: React.FC = () => {
   const bgPatternUrl = "/images/bgPatternUrl.png";
 
   const galleryItems = [
-    { id: 1, category: 'Sports', title: 'Sports Day', url: '/images/IMG_9757.JPG' },
-    { id: 2, category: 'Academic', title: 'Classroom Moments', url: '/images/homeAcademics.JPG' },
-    { id: 3, category: 'Events', title: 'Celebrations', url: '/images/homeGallery.jpg' },
-    { id: 4, category: 'Campus', title: 'School Grounds', url: '/images/homeGallery1.jpg' },
-    { id: 5, category: 'Academic', title: 'Arts & Crafts', url: '/images/IMG_9762.JPG' },
-    { id: 6, category: 'Academic', title: 'Learning Together', url: '/images/home-about-pic.JPG' },
+    { id: 1, category: 'Academic', title: 'Classroom Learning', url: '/images/homeAcademics.JPG' },
+    { id: 2, category: 'Events', title: 'Cultural Fest', url: '/images/homeGallery.jpg' },
+    { id: 3, category: 'Campus', title: 'School Assembly', url: '/images/homeGallery1.jpg' },
+    { id: 4, category: 'Academic', title: 'STEM Workshop', url: '/images/stem_workshop.jpeg' },
+    { id: 5, category: 'Sports', title: 'Throwball Champions', url: '/images/Inter-School Throwball Championship.JPG' },
+    { id: 6, category: 'Events', title: 'Exhibition Winners', url: '/images/bhavans_exhibition.jpeg' },
+    { id: 7, category: 'Academic', title: 'Class 10 Achievers', url: '/images/10thclass.jpeg' },
+    { id: 8, category: 'Sports', title: 'Sports Highlights', url: '/images/IMG_9757.JPG' },
+    { id: 9, category: 'Campus', title: 'Student Life', url: '/images/home-about-pic.JPG' },
   ];
 
   const filteredItems = activeFilter === 'All'
@@ -113,6 +116,14 @@ const Home: React.FC = () => {
   ];
 
   const awards = [
+    {
+      title: "All India Bhavan's School Exhibition",
+      org: "First Prize - Water Conservation",
+      year: "2026",
+      desc: "Our students proudly participated in the All India Bhavan's School Exhibition, competing among 26 schools from Bangalore and 50 schools from Bharatiya Vidya Bhavan’s schools, and emerged as the FIRST PRIZE WINNERS!",
+      image: "/images/bhavans_exhibition.jpeg",
+      bg: "bg-blue-50"
+    },
     {
       title: "India School Merit Award",
       org: "Education Today",
@@ -297,9 +308,9 @@ const Home: React.FC = () => {
               </div>
               <div className="space-y-6 flex-grow">
                 {[
+                  { title: 'STEM Workshop', cat: 'Academics' },
+                  { title: 'Bhavan\'s Exhibition 1st Prize', cat: 'Achievements' },
                   { title: 'Unit Assessments', cat: 'Academics' },
-                  { title: 'Christmas Carnival', cat: 'Cultural' },
-                  { title: 'Campus Reopens', cat: 'School' },
                   { title: 'Annual Sports Meet', cat: 'Sports' },
                 ].map((event, i) => (
                   <div key={i} className="flex gap-4 group cursor-pointer items-center">
@@ -628,9 +639,9 @@ const Home: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {filteredItems.map((item, i) => (
-              <div key={item.id} className="reveal group relative cursor-pointer overflow-hidden rounded-[2rem] border-[1px] border-secondary p-1 bg-white shadow-md transition-all duration-500 hover:shadow-2xl hover:-translate-y-1" style={{ transitionDelay: `${i * 100}ms` }} onClick={() => setSelectedImage(item.url)}>
+              <div key={item.id} className="group relative cursor-pointer overflow-hidden rounded-[2rem] border-[1px] border-secondary p-1 bg-white shadow-md transition-all duration-500 hover:shadow-2xl hover:-translate-y-1" style={{ transitionDelay: `${i * 100}ms` }} onClick={() => setSelectedImage(item.url)}>
                 <div className="aspect-[4/3] overflow-hidden rounded-[1.8rem]">
-                  <img src={item.url} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={item.url} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                 </div>
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="w-8 h-8 bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center text-white border border-white/40"><Search size={16} /></div>

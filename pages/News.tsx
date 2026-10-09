@@ -30,13 +30,31 @@ const News: React.FC = () => {
 
   const newsItems = [
     {
+      id: 7,
+      category: 'Achievements',
+      title: "FIRST PRIZE at All India BHAVAN'S SCHOOL Exhibition! 🏆",
+      date: 'October 9, 2026',
+      excerpt: 'Our students proudly participated in the All India BHAVAN\'S SCHOOL Exhibition, competing among 26 schools from Bangalore and 50 schools from Bharatiya Vidya Bhavan’s schools — and emerged as the FIRST PRIZE WINNERS in the WATER CONSERVATION category! 🥇',
+      image: '/images/bhavans_exhibition.jpeg',
+      featured: true
+    },
+    {
+      id: 8,
+      category: 'Academics',
+      title: "Incredible STEM Workshop with Vasudev! 🔬✨",
+      date: 'October 9, 2026',
+      excerpt: "A truly enriching and inspiring session with Vasudev as our speaker! The workshop was filled with amazing ideas, hands-on learning, creativity, and energy, made even more special by our SUPER teachers!",
+      image: '/images/stem_workshop.jpeg',
+      featured: false
+    },
+    {
       id: 1,
       category: 'Academics',
       title: 'KPS Achieves 100% Distinction in CBSE Class 12 Board Results',
       date: 'May 12, 2024',
       excerpt: 'Once again, our students have demonstrated academic excellence with an incredible 100% distinction rate in the recently announced board results.',
       image: '/images/10thclass.jpeg',
-      featured: true
+      featured: false
     },
     {
       id: 2,

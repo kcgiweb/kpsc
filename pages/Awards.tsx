@@ -26,6 +26,14 @@ const Awards: React.FC = () => {
 
   const awards = [
     {
+      title: "All India Bhavan's School Exhibition",
+      org: "First Prize - Water Conservation",
+      year: "2026",
+      desc: "Our students proudly participated in the All India Bhavan's School Exhibition, competing among 26 schools from Bangalore and 50 schools from Bharatiya Vidya Bhavan’s schools, and emerged as the FIRST PRIZE WINNERS!",
+      image: "/images/bhavans_exhibition.jpeg",
+      bg: "bg-blue-50"
+    },
+    {
       title: "India School Merit Award",
       org: "Education Today",
       year: "2023",
@@ -161,6 +169,55 @@ const Awards: React.FC = () => {
           <p className="text-white/60 max-w-2xl mx-auto text-lg reveal delay-200">
             A testament to our unwavering commitment to excellence, integrity, and the pursuit of academic mastery.
           </p>
+        </div>
+      </section>
+
+      {/* Educator Excellence Awards */}
+      <section className="py-24 bg-gray-50 relative">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto reveal">
+            <div className="text-center mb-12">
+              <h4 className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] mb-4">Educator Awards</h4>
+              <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">Honoring Our <span className="italic">Teachers.</span></h2>
+              <p className="text-black/80 text-lg max-w-3xl mx-auto leading-relaxed">
+                "It was great to host all the Principals and the proud teachers from various schools. It was indeed a lot of mind-boggling task for the jury members to pick 200 winners from 700 odd applications."
+              </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div className="bg-white p-8 md:p-10 rounded-[3rem] shadow-xl text-left border border-gray-100 flex flex-col gap-6 h-full justify-center">
+                <div className="flex items-center gap-6 p-6 rounded-3xl bg-orange-50 border border-orange-100/50 hover:shadow-md transition-shadow">
+                  <div className="w-14 h-14 rounded-full bg-orange-200/50 flex items-center justify-center text-orange-600 font-black shrink-0 text-xl border border-orange-300">1</div>
+                  <div>
+                    <h4 className="font-bold text-xl text-primary mb-1">Category 5 — Operations Star Award</h4>
+                    <p className="text-black/70 text-lg font-medium">PROWDARAJU .M G</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6 p-6 rounded-3xl bg-blue-50 border border-blue-100/50 hover:shadow-md transition-shadow">
+                  <div className="w-14 h-14 rounded-full bg-blue-200/50 flex items-center justify-center text-blue-600 font-black shrink-0 text-xl border border-blue-300">2</div>
+                  <div>
+                    <h4 className="font-bold text-xl text-primary mb-1">Category 3 — Champion Scholastic Educator Award</h4>
+                    <p className="text-black/70 text-lg font-medium">SHOBHA AUJIKAR</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4 h-full">
+                <div className="relative rounded-3xl overflow-hidden shadow-lg aspect-video md:aspect-square">
+                  <img src="/images/awards_winners/1.JPG" alt="Award 1" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="relative rounded-3xl overflow-hidden shadow-lg aspect-video md:aspect-square">
+                  <img src="/images/awards_winners/2.JPG" alt="Award 2" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="relative rounded-3xl overflow-hidden shadow-lg aspect-video md:aspect-square">
+                  <img src="/images/awards_winners/3.JPG" alt="Award 3" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="relative rounded-3xl overflow-hidden shadow-lg aspect-video md:aspect-square">
+                  <img src="/images/awards_winners/4.JPG" alt="Award 4" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
