@@ -35,7 +35,7 @@ const News: React.FC = () => {
       title: 'KPS Achieves 100% Distinction in CBSE Class 12 Board Results',
       date: 'May 12, 2024',
       excerpt: 'Once again, our students have demonstrated academic excellence with an incredible 100% distinction rate in the recently announced board results.',
-      image: '/images/homeAcademics.JPG',
+      image: '/images/10thclass.jpeg',
       featured: true
     },
     {

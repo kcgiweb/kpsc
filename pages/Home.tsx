@@ -558,8 +558,8 @@ const Home: React.FC = () => {
           <div ref={alumniScrollRef} className="flex overflow-x-auto gap-6 pb-6 px-4 no-scrollbar scroll-smooth">
             {alumniData.map((alum, i) => (
               <div key={i} className="flex-shrink-0 w-[280px] md:w-[320px] bg-white rounded-[1.5rem] p-5 shadow-2xl flex flex-col items-center group transition-all duration-500 hover:scale-[1.02]">
-                <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-4 border-gray-50 shadow-xl group-hover:border-secondary transition-colors">
-                  <img src={alum.image} className="w-full h-full object-cover" alt={alum.name} />
+                <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-4 border-gray-50 shadow-xl group-hover:border-secondary transition-colors flex items-center justify-center bg-gray-100 text-4xl font-bold text-primary">
+                  {alum.name.charAt(0)}
                 </div>
                 <h3 className="text-lg font-black text-primary mb-3 text-center group-hover:text-secondary transition-colors">{alum.name}</h3>
                 <div className="w-full h-px bg-gray-100 mb-4"></div>

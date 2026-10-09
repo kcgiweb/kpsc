@@ -28,7 +28,7 @@ const PrincipalsMessage: React.FC = () => {
 
    return (
       <main className="bg-white">
-      <SEO title="Principals Message" />
+         <SEO title="Principals Message" />
          {/* Editorial Hero */}
          <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
@@ -64,7 +64,7 @@ const PrincipalsMessage: React.FC = () => {
                            <div className="absolute inset-0 bg-secondary/10 rounded-[3rem] translate-x-4 translate-y-4 -rotate-2"></div>
                            <div className="relative rounded-[3rem] overflow-hidden shadow-2xl">
                               <img
-                                 src="/images/principal.png"
+                                 src="/images/principal.jpeg"
                                  className="w-full aspect-[4/5] object-cover"
                                  alt="Principal Portrait"
                               />
@@ -80,7 +80,7 @@ const PrincipalsMessage: React.FC = () => {
                               </div>
                               <div className="flex items-center space-x-3 text-black hover:text-primary transition-colors cursor-pointer">
                                  <Phone size={16} />
-                                 <span className="text-xs font-bold">63668 68954</span>
+                                 <span className="text-xs font-bold">9986370148</span>
                               </div>
                            </div>
                         </div>
@@ -118,7 +118,7 @@ const PrincipalsMessage: React.FC = () => {
                         </div>
 
                         <div className="mt-20 pt-10 border-t border-gray-100">
-                           <p className="text-2xl font-poppins font-bold text-primary mb-2">Ms. Sneha Kavatekar</p>
+                           <p className="text-2xl font-poppins font-bold text-primary mb-2">Ms. Radha Vijaykumar</p>
                            <p className="text-secondary font-black uppercase text-[10px] tracking-widest">Principal,</p>
                            <p className="text-secondary font-black uppercase text-[10px] tracking-widest">Karnataka Public School</p>
                         </div>
